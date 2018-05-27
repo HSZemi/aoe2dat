@@ -16,7 +16,7 @@ using namespace std;
 
 int main() {
 	ofstream myfile;
-	myfile.open("units.json");
+	myfile.open("units_buildings_techs.json");
 
 	cout << "Loading ./empires2_x2_p1.dat..." << endl;
 
