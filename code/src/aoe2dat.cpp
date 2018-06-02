@@ -21,6 +21,15 @@ void civ2json(std::ofstream& out, genie::Civ civ);
 void research2json(std::ofstream& out, genie::Tech tech); // genie::Tech
 void unit2json(std::ofstream& out, genie::Unit unit);
 void task2json(std::ofstream& out, genie::Task task);
+void playercolour2json(std::ofstream& out, genie::PlayerColour pc);
+void techtree2json(std::ofstream& out, genie::TechTree techtree);
+void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage);
+void buildingconnection2json(std::ofstream& out,
+		genie::BuildingConnection buildingconnection);
+void unitconnection2json(std::ofstream& out, genie::UnitConnection techtreeage);
+void researchconnection2json(std::ofstream& out,
+		genie::ResearchConnection techtreeage);
+void common2json(std::ofstream& out, genie::techtree::Common common);
 // unit
 void attackorarmor2json(std::ofstream& out,
 		genie::unit::AttackOrArmor attackOrArmor);
@@ -40,7 +49,7 @@ int main() {
 	ofstream myfile;
 	ofstream jayson;
 	myfile.open("units_buildings_techs.json");
-	jayson.open("jayson.json");
+	jayson.open("full.json");
 
 	cout << "Loading ./empires2_x2_p1.dat..." << endl;
 
@@ -189,6 +198,18 @@ int main() {
 
 void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 	out << "{" << endl;
+	out << "\"FileVersion\":\"" << datFile->FileVersion << "\"," << endl;
+	out << "\"PlayerColours\":[";
+	long pcsize = datFile->PlayerColours.size();
+	long pccount = 0;
+	for (genie::PlayerColour pc : datFile->PlayerColours) {
+		playercolour2json(out, pc);
+		if (++pccount < pcsize) {
+			out << ",";
+		}
+		out << endl;
+	}
+	out << "]," << endl;
 	out << "\"Civs\":[" << endl;
 	long civsize = datFile->Civs.size();
 	long civcount = 0;
@@ -210,8 +231,194 @@ void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 		}
 		out << endl;
 	}
-	out << "]" << endl;
+	out << "]," << endl;
+	out << "\"TechTree\":" << endl;
+	techtree2json(out, datFile->TechTree);
+	out << endl;
 	out << "}" << endl;
+}
+
+void techtree2json(std::ofstream& out, genie::TechTree techtree) {
+	out << "{" << endl;
+	out << "\"TotalUnitTechGroups\":" << techtree.TotalUnitTechGroups << ","
+			<< endl;
+	out << "\"TechTreeAges\":[";
+	long size = techtree.TechTreeAges.size();
+	long count = 0;
+	for (genie::TechTreeAge techtreeage : techtree.TechTreeAges) {
+		techtreeage2json(out, techtreeage);
+		if (++count < size) {
+			out << ",";
+		}
+		out << endl;
+	}
+	out << "]," << endl;
+	out << "\"BuildingConnections\":[";
+	size = techtree.BuildingConnections.size();
+	count = 0;
+	for (genie::BuildingConnection buildingconnection : techtree.BuildingConnections) {
+		buildingconnection2json(out, buildingconnection);
+		if (++count < size) {
+			out << ",";
+		}
+		out << endl;
+	}
+	out << "]," << endl;
+	out << "\"UnitConnections\":[";
+	size = techtree.UnitConnections.size();
+	count = 0;
+	for (genie::UnitConnection unitconnection : techtree.UnitConnections) {
+		unitconnection2json(out, unitconnection);
+		if (++count < size) {
+			out << ",";
+		}
+		out << endl;
+	}
+	out << "]," << endl;
+	out << "\"ResearchConnections\":[";
+	size = techtree.ResearchConnections.size();
+	count = 0;
+	for (genie::ResearchConnection researchconnection : techtree.ResearchConnections) {
+		researchconnection2json(out, researchconnection);
+		if (++count < size) {
+			out << ",";
+		}
+		out << endl;
+	}
+	out << "]" << endl;
+	out << "}";
+}
+
+void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage) {
+	out << "{" << endl;
+	out << "\"ID\":" << techtreeage.ID << "," << endl;
+	out << "\"Status\":" << std::to_string(techtreeage.Status) << "," << endl;
+	out << "\"Buildings\":[" << join2string<int32_t>(techtreeage.Buildings)
+			<< "]," << endl;
+	out << "\"Units\":[" << join2string<int32_t>(techtreeage.Units) << "],"
+			<< endl;
+	out << "\"Techs\":[" << join2string<int32_t>(techtreeage.Techs) << "],"
+			<< endl;
+	out << "\"Common\":";
+	common2json(out, techtreeage.Common);
+	out << "," << endl;
+	out << "\"NumBuildingLevels\":"
+			<< std::to_string(techtreeage.NumBuildingLevels) << "," << endl;
+	out << "\"BuildingsPerZone\":["
+			<< join2string<int8_t>(techtreeage.BuildingsPerZone) << "],"
+			<< endl;
+	out << "\"GroupLengthPerZone\":["
+			<< join2string<int8_t>(techtreeage.GroupLengthPerZone) << "],"
+			<< endl;
+	out << "\"MaxAgeLength\":" << std::to_string(techtreeage.MaxAgeLength)
+			<< "," << endl;
+	out << "\"LineMode\":" << techtreeage.LineMode << endl;
+	out << "}";
+}
+
+void common2json(std::ofstream& out, genie::techtree::Common common) {
+	out << "{" << endl;
+	out << "\"SlotsUsed\":" << common.SlotsUsed << "," << endl;
+	out << "\"UnitResearch\":[" << join2string<int32_t>(common.UnitResearch)
+			<< "]," << endl;
+	out << "\"Mode\":[" << join2string<int32_t>(common.Mode) << "]" << endl;
+	out << "}";
+}
+
+void buildingconnection2json(std::ofstream& out,
+		genie::BuildingConnection buildingconnection) {
+	out << "{" << endl;
+	out << "\"ID\":" << buildingconnection.ID << "," << endl;
+	out << "\"Status\":" << std::to_string(buildingconnection.Status) << ","
+			<< endl;
+	out << "\"Buildings\":["
+			<< join2string<int32_t>(buildingconnection.Buildings) << "],"
+			<< endl;
+	out << "\"Units\":[" << join2string<int32_t>(buildingconnection.Units)
+			<< "]," << endl;
+	out << "\"Techs\":[" << join2string<int32_t>(buildingconnection.Techs)
+			<< "]," << endl;
+	out << "\"Common\":";
+	common2json(out, buildingconnection.Common);
+	out << "," << endl;
+	out << "\"LocationInAge\":"
+			<< std::to_string(buildingconnection.LocationInAge) << "," << endl;
+	out << "\"UnitsTechsTotal\":["
+			<< join2string<int8_t>(buildingconnection.UnitsTechsTotal) << "],"
+			<< endl;
+	out << "\"UnitsTechsFirst\":["
+			<< join2string<int8_t>(buildingconnection.UnitsTechsFirst) << "],"
+			<< endl;
+	out << "\"LineMode\":" << buildingconnection.LineMode << "," << endl;
+	out << "\"EnablingResearch\":" << buildingconnection.EnablingResearch
+			<< endl;
+	out << "}";
+}
+
+void unitconnection2json(std::ofstream& out,
+		genie::UnitConnection unitconnection) {
+	out << "{" << endl;
+	out << "\"ID\":" << unitconnection.ID << "," << endl;
+	out << "\"Status\":" << std::to_string(unitconnection.Status) << ","
+			<< endl;
+	out << "\"UpperBuilding\":" << unitconnection.UpperBuilding << "," << endl;
+	out << "\"Common\":";
+	common2json(out, unitconnection.Common);
+	out << "," << endl;
+	out << "\"VerticalLine\":" << unitconnection.VerticalLine << "," << endl;
+	out << "\"Units\":[" << join2string<int32_t>(unitconnection.Units) << "],"
+			<< endl;
+	out << "\"LocationInAge\":" << unitconnection.LocationInAge << "," << endl;
+	out << "\"RequiredResearch\":" << unitconnection.RequiredResearch << ","
+			<< endl;
+	out << "\"LineMode\":" << unitconnection.LineMode << "," << endl;
+	out << "\"EnablingResearch\":" << unitconnection.EnablingResearch << endl;
+	out << "}";
+}
+
+void researchconnection2json(std::ofstream& out,
+		genie::ResearchConnection researchconnection) {
+	out << "{" << endl;
+	out << "\"ID\":" << researchconnection.ID << "," << endl;
+	out << "\"Status\":" << std::to_string(researchconnection.Status) << ","
+			<< endl;
+	out << "\"UpperBuilding\":" << researchconnection.UpperBuilding << ","
+			<< endl;
+	out << "\"Buildings\":["
+			<< join2string<int32_t>(researchconnection.Buildings) << "],"
+			<< endl;
+	out << "\"Units\":[" << join2string<int32_t>(researchconnection.Units)
+			<< "]," << endl;
+	out << "\"Techs\":[" << join2string<int32_t>(researchconnection.Techs)
+			<< "]," << endl;
+	out << "\"Common\":";
+	common2json(out, researchconnection.Common);
+	out << "," << endl;
+	out << "\"VerticalLine\":" << researchconnection.VerticalLine << ","
+			<< endl;
+	out << "\"LocationInAge\":" << researchconnection.LocationInAge << ","
+			<< endl;
+	out << "\"LineMode\":" << researchconnection.LineMode << endl;
+	out << "}";
+}
+
+void playercolour2json(std::ofstream& out, genie::PlayerColour pc) {
+	out << "{" << endl;
+	out << "\"ID\":\"" << pc.ID << "\"," << endl;
+	out << "\"MinimapColour\":\"" << pc.MinimapColour << "\"," << endl;
+	out << "\"PlayerColorBase\":\"" << pc.PlayerColorBase << "\"," << endl;
+	out << "\"UnitOutlineColor\":\"" << pc.UnitOutlineColor << "\"," << endl;
+	out << "\"UnitSelectionColor1\":\"" << pc.UnitSelectionColor1 << "\","
+			<< endl;
+	out << "\"UnitSelectionColor2\":\"" << pc.UnitSelectionColor2 << "\","
+			<< endl;
+	out << "\"MinimapColor2\":\"" << pc.MinimapColor2 << "\"," << endl;
+	out << "\"MinimapColor3\":\"" << pc.MinimapColor3 << "\"," << endl;
+	out << "\"StatisticsText\":\"" << pc.StatisticsText << "\"," << endl;
+	out << "\"Name\":\"" << pc.Name << "\"," << endl;
+	out << "\"ResourceID\":\"" << pc.ResourceID << "\"," << endl;
+	out << "\"Type\":\"" << std::to_string(pc.Type) << "\"" << endl;
+	out << "}";
 }
 
 void civ2json(std::ofstream& out, genie::Civ civ) {
