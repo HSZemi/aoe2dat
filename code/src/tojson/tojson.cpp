@@ -20,6 +20,17 @@ void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 		out << std::endl;
 	}
 	out << "]," << std::endl;
+	out << "\"Effects\":[" << std::endl;
+	long effectsize = datFile->Effects.size();
+	long effectcount = 0;
+	for (genie::Effect effect : datFile->Effects) {
+		effect2json(out, effect);
+		if (++effectcount < effectsize) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]," << std::endl;
 	out << "\"Civs\":[" << std::endl;
 	long civsize = datFile->Civs.size();
 	long civcount = 0;
@@ -46,6 +57,34 @@ void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 	techtree2json(out, datFile->TechTree);
 	out << std::endl;
 	out << "}" << std::endl;
+}
+
+void effect2json(std::ofstream& out, genie::Effect effect) {
+	out << "{" << std::endl;
+	out << "\"Name\":\"" << effect.Name << "\"," << std::endl;
+	out << "\"EffectCommands\":[";
+	long size = effect.EffectCommands.size();
+	long count = 0;
+	for (genie::EffectCommand effectCommand : effect.EffectCommands) {
+		effectcommand2json(out, effectCommand);
+		if (++count < size) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]" << std::endl;
+	out << "}";
+}
+
+void effectcommand2json(std::ofstream& out,
+		genie::EffectCommand effectCommand) {
+	out << "{" << std::endl;
+	out << "\"Type\":" << std::to_string(effectCommand.Type) << "," << std::endl;
+	out << "\"A\":" << effectCommand.A << "," << std::endl;
+	out << "\"B\":" << effectCommand.B << "," << std::endl;
+	out << "\"C\":" << effectCommand.C << "," << std::endl;
+	out << "\"D\":" << effectCommand.D << "" << std::endl;
+	out << "}";
 }
 
 void techtree2json(std::ofstream& out, genie::TechTree techtree) {
@@ -102,7 +141,8 @@ void techtree2json(std::ofstream& out, genie::TechTree techtree) {
 void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage) {
 	out << "{" << std::endl;
 	out << "\"ID\":" << techtreeage.ID << "," << std::endl;
-	out << "\"Status\":" << std::to_string(techtreeage.Status) << "," << std::endl;
+	out << "\"Status\":" << std::to_string(techtreeage.Status) << ","
+			<< std::endl;
 	out << "\"Buildings\":[" << join2string<int32_t>(techtreeage.Buildings)
 			<< "]," << std::endl;
 	out << "\"Units\":[" << join2string<int32_t>(techtreeage.Units) << "],"
@@ -113,7 +153,8 @@ void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage) {
 	common2json(out, techtreeage.Common);
 	out << "," << std::endl;
 	out << "\"NumBuildingLevels\":"
-			<< std::to_string(techtreeage.NumBuildingLevels) << "," << std::endl;
+			<< std::to_string(techtreeage.NumBuildingLevels) << ","
+			<< std::endl;
 	out << "\"BuildingsPerZone\":["
 			<< join2string<int8_t>(techtreeage.BuildingsPerZone) << "],"
 			<< std::endl;
@@ -131,7 +172,8 @@ void common2json(std::ofstream& out, genie::techtree::Common common) {
 	out << "\"SlotsUsed\":" << common.SlotsUsed << "," << std::endl;
 	out << "\"UnitResearch\":[" << join2string<int32_t>(common.UnitResearch)
 			<< "]," << std::endl;
-	out << "\"Mode\":[" << join2string<int32_t>(common.Mode) << "]" << std::endl;
+	out << "\"Mode\":[" << join2string<int32_t>(common.Mode) << "]"
+			<< std::endl;
 	out << "}";
 }
 
@@ -152,7 +194,8 @@ void buildingconnection2json(std::ofstream& out,
 	common2json(out, buildingconnection.Common);
 	out << "," << std::endl;
 	out << "\"LocationInAge\":"
-			<< std::to_string(buildingconnection.LocationInAge) << "," << std::endl;
+			<< std::to_string(buildingconnection.LocationInAge) << ","
+			<< std::endl;
 	out << "\"UnitsTechsTotal\":["
 			<< join2string<int8_t>(buildingconnection.UnitsTechsTotal) << "],"
 			<< std::endl;
@@ -171,18 +214,22 @@ void unitconnection2json(std::ofstream& out,
 	out << "\"ID\":" << unitconnection.ID << "," << std::endl;
 	out << "\"Status\":" << std::to_string(unitconnection.Status) << ","
 			<< std::endl;
-	out << "\"UpperBuilding\":" << unitconnection.UpperBuilding << "," << std::endl;
+	out << "\"UpperBuilding\":" << unitconnection.UpperBuilding << ","
+			<< std::endl;
 	out << "\"Common\":";
 	common2json(out, unitconnection.Common);
 	out << "," << std::endl;
-	out << "\"VerticalLine\":" << unitconnection.VerticalLine << "," << std::endl;
+	out << "\"VerticalLine\":" << unitconnection.VerticalLine << ","
+			<< std::endl;
 	out << "\"Units\":[" << join2string<int32_t>(unitconnection.Units) << "],"
 			<< std::endl;
-	out << "\"LocationInAge\":" << unitconnection.LocationInAge << "," << std::endl;
+	out << "\"LocationInAge\":" << unitconnection.LocationInAge << ","
+			<< std::endl;
 	out << "\"RequiredResearch\":" << unitconnection.RequiredResearch << ","
 			<< std::endl;
 	out << "\"LineMode\":" << unitconnection.LineMode << "," << std::endl;
-	out << "\"EnablingResearch\":" << unitconnection.EnablingResearch << std::endl;
+	out << "\"EnablingResearch\":" << unitconnection.EnablingResearch
+			<< std::endl;
 	out << "}";
 }
 
@@ -217,7 +264,8 @@ void playercolour2json(std::ofstream& out, genie::PlayerColour pc) {
 	out << "\"ID\":\"" << pc.ID << "\"," << std::endl;
 	out << "\"MinimapColour\":\"" << pc.MinimapColour << "\"," << std::endl;
 	out << "\"PlayerColorBase\":\"" << pc.PlayerColorBase << "\"," << std::endl;
-	out << "\"UnitOutlineColor\":\"" << pc.UnitOutlineColor << "\"," << std::endl;
+	out << "\"UnitOutlineColor\":\"" << pc.UnitOutlineColor << "\","
+			<< std::endl;
 	out << "\"UnitSelectionColor1\":\"" << pc.UnitSelectionColor1 << "\","
 			<< std::endl;
 	out << "\"UnitSelectionColor2\":\"" << pc.UnitSelectionColor2 << "\","
@@ -233,7 +281,8 @@ void playercolour2json(std::ofstream& out, genie::PlayerColour pc) {
 
 void civ2json(std::ofstream& out, genie::Civ civ) {
 	out << "{" << std::endl;
-	out << "\"PlayerType\":" << std::to_string(civ.PlayerType) << "," << std::endl;
+	out << "\"PlayerType\":" << std::to_string(civ.PlayerType) << ","
+			<< std::endl;
 	out << "\"Name\":\"" << civ.Name << "\"," << std::endl;
 	out << "\"Name2\":\"" << civ.Name2 << "\"," << std::endl;
 	out << "\"TechTreeID\":" << civ.TechTreeID << "," << std::endl;
@@ -271,7 +320,8 @@ void unit2json(std::ofstream& out, genie::Unit unit) {
 			<< unit.StandingGraphic.second << "]," << std::endl;
 	out << "\"DyingGraphic\":" << unit.DyingGraphic << "," << std::endl;
 	out << "\"UndeadGraphic\":" << unit.UndeadGraphic << "," << std::endl;
-	out << "\"UndeadMode\":" << std::to_string(unit.UndeadMode) << "," << std::endl;
+	out << "\"UndeadMode\":" << std::to_string(unit.UndeadMode) << ","
+			<< std::endl;
 	out << "\"HitPoints\":" << unit.HitPoints << "," << std::endl;
 	out << "\"LineOfSight\":" << unit.LineOfSight << "," << std::endl;
 	out << "\"GarrisonCapacity\":" << std::to_string(unit.GarrisonCapacity)
@@ -283,7 +333,8 @@ void unit2json(std::ofstream& out, genie::Unit unit) {
 	out << "\"DamageSound\":" << unit.DamageSound << "," << std::endl;
 	out << "\"DeadUnitID\":" << unit.DeadUnitID << "," << std::endl;
 	out << "\"BloodUnitID\":" << unit.BloodUnitID << "," << std::endl;
-	out << "\"SortNumber\":" << std::to_string(unit.SortNumber) << "," << std::endl;
+	out << "\"SortNumber\":" << std::to_string(unit.SortNumber) << ","
+			<< std::endl;
 	out << "\"CanBeBuiltOn\":" << std::to_string(unit.CanBeBuiltOn) << ","
 			<< std::endl;
 	out << "\"IconID\":" << unit.IconID << "," << std::endl;
@@ -301,7 +352,8 @@ void unit2json(std::ofstream& out, genie::Unit unit) {
 	out << "\"HillMode\":" << std::to_string(unit.HillMode) << "," << std::endl;
 	out << "\"FogVisibility\":" << std::to_string(unit.FogVisibility) << ","
 			<< std::endl;
-	out << "\"TerrainRestriction\":" << unit.TerrainRestriction << "," << std::endl;
+	out << "\"TerrainRestriction\":" << unit.TerrainRestriction << ","
+			<< std::endl;
 	out << "\"FlyMode\":" << std::to_string(unit.FlyMode) << "," << std::endl;
 	out << "\"ResourceCapacity\":" << unit.ResourceCapacity << "," << std::endl;
 	out << "\"ResourceDecay\":" << unit.ResourceDecay << "," << std::endl;
@@ -323,11 +375,13 @@ void unit2json(std::ofstream& out, genie::Unit unit) {
 	out << "\"LanguageDLLHotKeyText\":" << unit.LanguageDLLHotKeyText << ","
 			<< std::endl;
 	out << "\"HotKey\":" << unit.HotKey << "," << std::endl;
-	out << "\"Recyclable\":" << std::to_string(unit.Recyclable) << "," << std::endl;
+	out << "\"Recyclable\":" << std::to_string(unit.Recyclable) << ","
+			<< std::endl;
 	out << "\"EnableAutoGather\":" << std::to_string(unit.EnableAutoGather)
 			<< "," << std::endl;
 	out << "\"CreateDoppelgangerOnDeath\":"
-			<< std::to_string(unit.CreateDoppelgangerOnDeath) << "," << std::endl;
+			<< std::to_string(unit.CreateDoppelgangerOnDeath) << ","
+			<< std::endl;
 	out << "\"ResourceGatherGroup\":"
 			<< std::to_string(unit.ResourceGatherGroup) << "," << std::endl;
 	out << "\"OcclusionMode\":" << std::to_string(unit.OcclusionMode) << ","
@@ -428,7 +482,8 @@ void deadfish2json(std::ofstream& out, genie::unit::DeadFish deadFish) {
 	out << "\"OldMoveAlgorithm\":" << std::to_string(deadFish.OldMoveAlgorithm)
 			<< "," << std::endl;
 	out << "\"TurnRadius\":" << deadFish.TurnRadius << "," << std::endl;
-	out << "\"TurnRadiusSpeed\":" << deadFish.TurnRadiusSpeed << "," << std::endl;
+	out << "\"TurnRadiusSpeed\":" << deadFish.TurnRadiusSpeed << ","
+			<< std::endl;
 	out << "\"MaxYawPerSecondMoving\":" << deadFish.MaxYawPerSecondMoving << ","
 			<< std::endl;
 	out << "\"StationaryYawRevolutionTime\":"
@@ -442,13 +497,15 @@ void task2json(std::ofstream& out, genie::Task task) {
 	out << "{" << std::endl;
 	out << "\"TaskType\":" << task.TaskType << "," << std::endl;
 	out << "\"ID\":" << task.ID << "," << std::endl;
-	out << "\"IsDefault\":" << std::to_string(task.IsDefault) << "," << std::endl;
+	out << "\"IsDefault\":" << std::to_string(task.IsDefault) << ","
+			<< std::endl;
 	out << "\"ActionType\":" << task.ActionType << "," << std::endl;
 	out << "\"ClassID\":" << task.ClassID << "," << std::endl;
 	out << "\"UnitID\":" << task.UnitID << "," << std::endl;
 	out << "\"TerrainID\":" << task.TerrainID << "," << std::endl;
 	out << "\"ResourceIn\":" << task.ResourceIn << "," << std::endl;
-	out << "\"ResourceMultiplier\":" << task.ResourceMultiplier << "," << std::endl;
+	out << "\"ResourceMultiplier\":" << task.ResourceMultiplier << ","
+			<< std::endl;
 	out << "\"ResourceOut\":" << task.ResourceOut << "," << std::endl;
 	out << "\"UnusedResource\":" << task.UnusedResource << "," << std::endl;
 	out << "\"WorkValue1\":" << task.WorkValue1 << "," << std::endl;
@@ -465,17 +522,20 @@ void task2json(std::ofstream& out, genie::Task task) {
 	out << "\"WorkFlag2\":" << task.WorkFlag2 << "," << std::endl;
 	out << "\"TargetDiplomacy\":" << std::to_string(task.TargetDiplomacy) << ","
 			<< std::endl;
-	out << "\"CarryCheck\":" << std::to_string(task.CarryCheck) << "," << std::endl;
+	out << "\"CarryCheck\":" << std::to_string(task.CarryCheck) << ","
+			<< std::endl;
 	out << "\"PickForConstruction\":"
 			<< std::to_string(task.PickForConstruction) << "," << std::endl;
 	out << "\"MovingGraphicID\":" << task.MovingGraphicID << "," << std::endl;
 	out << "\"ProceedingGraphicID\":" << task.ProceedingGraphicID << ","
 			<< std::endl;
 	out << "\"WorkingGraphicID\":" << task.WorkingGraphicID << "," << std::endl;
-	out << "\"CarryingGraphicID\":" << task.CarryingGraphicID << "," << std::endl;
+	out << "\"CarryingGraphicID\":" << task.CarryingGraphicID << ","
+			<< std::endl;
 	out << "\"ResourceGatheringSoundID\":" << task.ResourceGatheringSoundID
 			<< "," << std::endl;
-	out << "\"ResourceDepositSoundID\":" << task.ResourceDepositSoundID << std::endl;
+	out << "\"ResourceDepositSoundID\":" << task.ResourceDepositSoundID
+			<< std::endl;
 	out << "}";
 }
 
@@ -490,7 +550,8 @@ void bird2json(std::ofstream& out, genie::unit::Bird bird) {
 			<< std::endl;
 	out << "\"AttackSound\":" << bird.AttackSound << "," << std::endl;
 	out << "\"MoveSound\":" << bird.MoveSound << "," << std::endl;
-	out << "\"RunPattern\":" << std::to_string(bird.RunPattern) << "," << std::endl;
+	out << "\"RunPattern\":" << std::to_string(bird.RunPattern) << ","
+			<< std::endl;
 	out << "\"TaskList\":[";
 	long tsize = bird.TaskList.size();
 	long tcount = 0;
@@ -521,25 +582,32 @@ void creatable2json(std::ofstream& out, genie::unit::Creatable creatable) {
 	}
 	out << "]," << std::endl;
 	out << "\"TrainTime\":" << creatable.TrainTime << "," << std::endl;
-	out << "\"TrainLocationID\":" << creatable.TrainLocationID << "," << std::endl;
-	out << "\"ButtonID\":" << std::to_string(creatable.ButtonID) << "," << std::endl;
+	out << "\"TrainLocationID\":" << creatable.TrainLocationID << ","
+			<< std::endl;
+	out << "\"ButtonID\":" << std::to_string(creatable.ButtonID) << ","
+			<< std::endl;
 	out << "\"RearAttackModifier\":" << creatable.RearAttackModifier << ","
 			<< std::endl;
 	out << "\"FlankAttackModifier\":" << creatable.FlankAttackModifier << ","
 			<< std::endl;
 	out << "\"CreatableType\":" << std::to_string(creatable.CreatableType)
 			<< "," << std::endl;
-	out << "\"HeroMode\":" << std::to_string(creatable.HeroMode) << "," << std::endl;
-	out << "\"GarrisonGraphic\":" << creatable.GarrisonGraphic << "," << std::endl;
-	out << "\"TotalProjectiles\":" << creatable.TotalProjectiles << "," << std::endl;
+	out << "\"HeroMode\":" << std::to_string(creatable.HeroMode) << ","
+			<< std::endl;
+	out << "\"GarrisonGraphic\":" << creatable.GarrisonGraphic << ","
+			<< std::endl;
+	out << "\"TotalProjectiles\":" << creatable.TotalProjectiles << ","
+			<< std::endl;
 	out << "\"MaxTotalProjectiles\":"
-			<< std::to_string(creatable.MaxTotalProjectiles) << "," << std::endl;
+			<< std::to_string(creatable.MaxTotalProjectiles) << ","
+			<< std::endl;
 	out << "\"ProjectileSpawningArea\":["
 			<< join2string<float>(creatable.ProjectileSpawningArea) << "],"
 			<< std::endl;
 	out << "\"SecondaryProjectileUnit\":" << creatable.SecondaryProjectileUnit
 			<< "," << std::endl;
-	out << "\"SpecialGraphic\":" << creatable.SpecialGraphic << "," << std::endl;
+	out << "\"SpecialGraphic\":" << creatable.SpecialGraphic << ","
+			<< std::endl;
 	out << "\"SpecialAbility\":" << std::to_string(creatable.SpecialAbility)
 			<< "," << std::endl;
 	out << "\"DisplayedPierceArmour\":" << creatable.DisplayedPierceArmour
@@ -562,7 +630,8 @@ void building2json(std::ofstream& out, genie::unit::Building building) {
 			<< std::endl;
 	out << "\"OldOverlayID\":" << building.OldOverlayID << "," << std::endl;
 	out << "\"TechID\":" << building.TechID << "," << std::endl;
-	out << "\"CanBurn\":" << std::to_string(building.CanBurn) << "," << std::endl;
+	out << "\"CanBurn\":" << std::to_string(building.CanBurn) << ","
+			<< std::endl;
 	out << "\"Annexes\": [" << std::endl;
 	long axsize = building.Annexes.size();
 	long axcount = 0;
@@ -583,7 +652,8 @@ void building2json(std::ofstream& out, genie::unit::Building building) {
 			<< std::endl;
 	out << "\"GarrisonType\":" << std::to_string(building.GarrisonType) << ","
 			<< std::endl;
-	out << "\"GarrisonHealRate\":" << building.GarrisonHealRate << "," << std::endl;
+	out << "\"GarrisonHealRate\":" << building.GarrisonHealRate << ","
+			<< std::endl;
 	out << "\"GarrisonRepairRate\":" << building.GarrisonRepairRate << ","
 			<< std::endl;
 	out << "\"PileUnit\":" << building.PileUnit << std::endl;
@@ -596,11 +666,13 @@ void projectile2json(std::ofstream& out, genie::unit::Projectile projectile) {
 			<< "," << std::endl;
 	out << "\"SmartMode\":" << std::to_string(projectile.SmartMode) << ","
 			<< std::endl;
-	out << "\"HitMode\":" << std::to_string(projectile.HitMode) << "," << std::endl;
+	out << "\"HitMode\":" << std::to_string(projectile.HitMode) << ","
+			<< std::endl;
 	out << "\"VanishMode\":" << std::to_string(projectile.VanishMode) << ","
 			<< std::endl;
 	out << "\"AreaEffectSpecials\":"
-			<< std::to_string(projectile.AreaEffectSpecials) << "," << std::endl;
+			<< std::to_string(projectile.AreaEffectSpecials) << ","
+			<< std::endl;
 	out << "\"ProjectileArc\":" << std::to_string(projectile.ProjectileArc)
 			<< std::endl;
 	out << "}";
@@ -638,13 +710,15 @@ void type502json(std::ofstream& out, genie::unit::Type50 type50) {
 	out << "\"MaxRange\":" << type50.MaxRange << "," << std::endl;
 	out << "\"BlastWidth\":" << type50.BlastWidth << "," << std::endl;
 	out << "\"ReloadTime\":" << type50.ReloadTime << "," << std::endl;
-	out << "\"ProjectileUnitID\":" << type50.ProjectileUnitID << "," << std::endl;
+	out << "\"ProjectileUnitID\":" << type50.ProjectileUnitID << ","
+			<< std::endl;
 	out << "\"AccuracyPercent\":" << type50.AccuracyPercent << "," << std::endl;
 	out << "\"BreakOffCombat\":" << std::to_string(type50.BreakOffCombat) << ","
 			<< std::endl;
 	out << "\"FrameDelay\":" << type50.FrameDelay << "," << std::endl;
 	out << "\"GraphicDisplacement\":["
-			<< join2string<float>(type50.GraphicDisplacement) << "]," << std::endl;
+			<< join2string<float>(type50.GraphicDisplacement) << "],"
+			<< std::endl;
 	out << "\"BlastAttackLevel\":" << std::to_string(type50.BlastAttackLevel)
 			<< "," << std::endl;
 	out << "\"MinRange\":" << type50.MinRange << "," << std::endl;
@@ -655,7 +729,8 @@ void type502json(std::ofstream& out, genie::unit::Type50 type50) {
 			<< std::endl;
 	out << "\"DisplayedAttack\":" << type50.DisplayedAttack << "," << std::endl;
 	out << "\"DisplayedRange\":" << type50.DisplayedRange << "," << std::endl;
-	out << "\"DisplayedReloadTime\":" << type50.DisplayedReloadTime << std::endl;
+	out << "\"DisplayedReloadTime\":" << type50.DisplayedReloadTime
+			<< std::endl;
 	out << "}";
 
 }
@@ -691,7 +766,8 @@ void research2json(std::ofstream& out, genie::Tech tech) {
 		out << std::endl;
 	}
 	out << "]," << std::endl;
-	out << "\"RequiredTechCount\":" << tech.RequiredTechCount << "," << std::endl;
+	out << "\"RequiredTechCount\":" << tech.RequiredTechCount << ","
+			<< std::endl;
 	out << "\"Civ\":" << tech.Civ << "," << std::endl;
 	out << "\"FullTechMode\":" << tech.FullTechMode << "," << std::endl;
 	out << "\"ResearchLocation\":" << tech.ResearchLocation << "," << std::endl;

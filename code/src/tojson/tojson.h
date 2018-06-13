@@ -6,6 +6,8 @@
 
 // dat
 void datfile2json(std::ofstream& out, genie::DatFile* datFile);
+void effect2json(std::ofstream& out, genie::Effect effect);
+void effectcommand2json(std::ofstream& out, genie::EffectCommand effectCommand);
 void civ2json(std::ofstream& out, genie::Civ civ);
 void research2json(std::ofstream& out, genie::Tech tech); // genie::Tech
 void unit2json(std::ofstream& out, genie::Unit unit);
