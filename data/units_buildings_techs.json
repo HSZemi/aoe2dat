@@ -1424,7 +1424,7 @@
 	},
 	"79" : {
 		"cost": {
-			"wood": 25,
+			"wood": 50,
 			"food": 0,
 			"gold": 0,
 			"stone": 125
@@ -4214,7 +4214,7 @@
 	},
 	"234" : {
 		"cost": {
-			"wood": 25,
+			"wood": 50,
 			"food": 0,
 			"gold": 0,
 			"stone": 125
@@ -4232,7 +4232,7 @@
 	},
 	"235" : {
 		"cost": {
-			"wood": 25,
+			"wood": 50,
 			"food": 0,
 			"gold": 0,
 			"stone": 125
@@ -15799,7 +15799,7 @@
 		"base_id":888,
 		"help_converter":26464,
 		"language_file_help":105464,
-		"name":"Inca_Turkey+Eagle",
+		"name":"Llama building",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0
@@ -15817,7 +15817,7 @@
 		"base_id":889,
 		"help_converter":26464,
 		"language_file_help":105464,
-		"name":"Inca_Eagle",
+		"name":"Disable llama building",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0
@@ -15835,7 +15835,7 @@
 		"base_id":890,
 		"help_converter":26464,
 		"language_file_help":105464,
-		"name":"Inca_Turkey_FullTech",
+		"name":"Empty llama annex",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0
@@ -19921,7 +19921,7 @@
 		"base_id":1118,
 		"help_converter":26464,
 		"language_file_help":105464,
-		"name":"Inca_Turkey_Upgrade",
+		"name":"Inca llama annex",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0
@@ -20001,8 +20001,8 @@
 	"1123" : {
 		"cost": {
 			"wood": 0,
-			"food": 25,
-			"gold": 10,
+			"food": 30,
+			"gold": 15,
 			"stone": 0
 		},
 		"attack":6,
@@ -20037,8 +20037,8 @@
 	"1125" : {
 		"cost": {
 			"wood": 0,
-			"food": 25,
-			"gold": 10,
+			"food": 30,
+			"gold": 15,
 			"stone": 0
 		},
 		"attack":7,
@@ -20054,7 +20054,7 @@
 	},
 	"1126" : {
 		"cost": {
-			"wood": 50,
+			"wood": 80,
 			"food": 0,
 			"gold": 60,
 			"stone": 0
@@ -20090,7 +20090,7 @@
 	},
 	"1128" : {
 		"cost": {
-			"wood": 50,
+			"wood": 80,
 			"food": 0,
 			"gold": 60,
 			"stone": 0
@@ -20120,7 +20120,7 @@
 		"help_converter":26165,
 		"language_file_help":105165,
 		"name":"RATAN",
-		"hit_points":35,
+		"hit_points":40,
 		"line_of_sight":6,
 		"garrison_capacity":0
 	},
@@ -20156,7 +20156,7 @@
 		"help_converter":26166,
 		"language_file_help":105166,
 		"name":"ERATAN",
-		"hit_points":40,
+		"hit_points":45,
 		"line_of_sight":6,
 		"garrison_capacity":0
 	},
@@ -30532,7 +30532,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Gunpowder -15% cheaper"
+		"name":"C-Bonus, Gunpowder 20% cheaper"
 	},
 	"501" : {
 		"cost": {
@@ -30713,8 +30713,8 @@
 	"517" : {
 		"cost": {
 			"wood": 0,
-			"food": 400,
-			"gold": 200,
+			"food": 600,
+			"gold": 600,
 			"stone": 0
 		},
 		"help_converter":28267,
@@ -31984,7 +31984,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Archers +10% HP"
+		"name":"C-Bonus, Archers +20% HP"
 	},
 	"633" : {
 		"cost": {
@@ -32039,7 +32039,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +2% inf HP castle"
+		"name":"C-Bonus, Infinite fish traps"
 	},
 	"638" : {
 		"cost": {
@@ -32050,7 +32050,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +2% inf HP imp"
+		"name":"Khmer requirement"
 	},
 	"639" : {
 		"cost": {
@@ -32435,7 +32435,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"Llama bonus"
 	},
 	"674" : {
 		"cost": {
@@ -32446,7 +32446,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"Disable Llama bonus"
 	},
 	"675" : {
 		"cost": {
