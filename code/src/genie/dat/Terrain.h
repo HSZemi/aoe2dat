@@ -2,7 +2,7 @@
     geniedat - A library for reading and writing data files of genie
                engine games.
     Copyright (C) 2011 - 2013  Armin Preiml
-    Copyright (C) 2011 - 2017  Mikko "Tapsa" P
+    Copyright (C) 2011 - 2018  Mikko "Tapsa" P
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
@@ -40,10 +40,15 @@ public:
   int32_t StringID = 0;
   int16_t Phantom = 0;
 
+  uint32_t WwiseSoundID = 0;
+  uint32_t WwiseSoundStopID = 0;
+
   unsigned short getNameSize(void);
 
   int32_t BlendPriority = 0;//not in aoe/ror
   int32_t BlendType = 0; //not in aoe/ror
+
+  std::string OverlayMaskName = "";
 
   std::pair<uint8_t, uint8_t> CliffColors = {0, 0};
   int8_t PassableTerrain = -1;
@@ -60,6 +65,7 @@ public:
   static const unsigned short TERRAIN_UNITS_SIZE = 30;
   std::vector<int16_t> TerrainUnitID;
   std::vector<int16_t> TerrainUnitDensity;
+  std::vector<int16_t> TerrainUnitMaskedDensity;
 
   /// If two terrain units are to be placed on same spot, this selects which one will prevail others.
   /// 1 = prevails, others don't.

@@ -55,8 +55,8 @@ public:
   LangFile();
   virtual ~LangFile();
   
-  virtual void load(const char *fileName) throw (std::ios_base::failure);
-  virtual void saveAs(const char *fileName) throw (std::ios_base::failure);
+  virtual void load(const char *fileName);
+  virtual void saveAs(const char *fileName);
   
   // get/set strings in default_charset (utf-8)
   std::string getString(unsigned int id);

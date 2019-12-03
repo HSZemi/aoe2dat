@@ -2,7 +2,7 @@
     geniedat - A library for reading and writing data files of genie
                engine games.
     Copyright (C) 2011 - 2013  Armin Preiml
-    Copyright (C) 2011 - 2017  Mikko "Tapsa" P
+    Copyright (C) 2011 - 2018  Mikko "Tapsa" P
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
@@ -48,6 +48,7 @@ public:
 
   /// See Name
   std::string FileName = "";
+  std::string ParticleEffectName = "";
 
   /// Number of frames to skip
   uint16_t FirstFrame = 0;
@@ -78,6 +79,7 @@ public:
   std::vector<int16_t> Coordinates = {0, 0, 0, 0};
 
   int16_t SoundID = -1;
+  uint32_t WwiseSoundID = 0;
   int8_t AngleSoundsUsed = 0;
 
   /// Number of frames per angle animation
@@ -94,6 +96,7 @@ public:
 
   /// Frame rate in seconds. (Delay between frames)
   float FrameDuration = 0;
+  float AnimationDuration = 0;
 
   /// Time to wait until the animation sequence is started again.
   float ReplayDelay = 0;

@@ -1,10 +1,8 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 #include <set>
 #include "genie/dat/DatFile.h"
 #include "tojson/tojson.h"
-#include <boost/algorithm/string/join.hpp>
 using namespace std;
 
 #define RES_FOOD 0
@@ -25,7 +23,7 @@ int main() {
 	cout << "Loading ./empires2_x2_p1.dat..." << endl;
 
 	genie::DatFile *df = new genie::DatFile();
-	df->setGameVersion(genie::GV_Cysion);
+	df->setGameVersion(genie::GV_LatestDE2);
 	df->load("empires2_x2_p1.dat");
 
 	cout << "Extracting json data..." << endl;
@@ -99,7 +97,11 @@ int main() {
 			myfile << "\t\t\"line_of_sight\":" << unit.LineOfSight << ","
 					<< endl;
 			myfile << "\t\t\"garrison_capacity\":"
-					<< (int16_t) unit.GarrisonCapacity << endl;
+					<< (int16_t) unit.GarrisonCapacity << "," << endl;
+			myfile << "\t\t\"type\":"
+					<< (genie::UnitType) unit.Type << ","<< endl;
+			myfile << "\t\t\"class\":"
+					<< (int16_t) unit.Class << endl;
 			myfile << "\t}";
 			if (unitctr < unitsize) {
 				myfile << ",";

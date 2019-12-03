@@ -79,32 +79,32 @@ public:
   static const unsigned short FILE_VERSION_SIZE = 8;
   std::string FileVersion;
 
-  std::vector<int32_t> FloatPtrTerrainTables; //x
-  std::vector<int32_t> TerrainPassGraphicPointers; //x
-  std::vector<TerrainRestriction> TerrainRestrictions; //x
+  std::vector<int32_t> FloatPtrTerrainTables;
+  std::vector<int32_t> TerrainPassGraphicPointers;
+  std::vector<TerrainRestriction> TerrainRestrictions;
 
-  std::vector<PlayerColour> PlayerColours; //x
+  std::vector<PlayerColour> PlayerColours;
 
-  std::vector<Sound> Sounds; //x
+  std::vector<Sound> Sounds;
 
   std::vector<int32_t> GraphicPointers;
-  std::vector<Graphic> Graphics; //x
+  std::vector<Graphic> Graphics;
 
-  genie::TerrainBlock TerrainBlock; //x
-  genie::RandomMaps RandomMaps; //x
+  genie::TerrainBlock TerrainBlock;
+  genie::RandomMaps RandomMaps;
 
-  std::vector<Effect> Effects; //x
+  std::vector<Effect> Effects;
 
   std::vector<UnitHeader> UnitHeaders;
 
-  std::vector<Civ> Civs; //x
+  std::vector<Civ> Civs;
 
-  std::vector<Tech> Techs; //x
+  std::vector<Tech> Techs;
 
   /// Only present in gv >= SWGB
   std::vector<UnitLine> UnitLines;
 
-  genie::TechTree TechTree; //x
+  genie::TechTree TechTree;
 
   /// History totals
   int32_t TimeSlice;

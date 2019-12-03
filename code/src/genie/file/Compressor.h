@@ -2,6 +2,7 @@
     genieutils - A library for reading and writing data files of genie
                engine games.
     Copyright (C) 2011 - 2013  Armin Preiml
+    Copyright (C) 2019  Mikko "Tapsa" P
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
@@ -20,7 +21,6 @@
 #ifndef GENIE_COMPRESSOR_H
 #define GENIE_COMPRESSOR_H
 
-#include <boost/noncopyable.hpp>
 #include <iostream>
 #include <memory>
 #include "ISerializable.h"
@@ -33,68 +33,70 @@ struct zlib_params;
 
 namespace genie
 {
-  
+
 //------------------------------------------------------------------------------
-/// Utility to compress and decompress streams handled in ISerializeable 
+/// Utility to compress and decompress streams handled in ISerializeable
 /// objects.
 //
-class Compressor : public boost::noncopyable
+class Compressor
 {
 public:
   //----------------------------------------------------------------------------
   /// Object that calls Compressors methods needs to register itself here.
-  /// 
+  ///
   /// @param obj object that calls compressors methods
   //
   Compressor(ISerializable *obj);
-  
+  Compressor(const Compressor&) = delete;
+  Compressor& operator=(const Compressor&) = delete;
+
   //----------------------------------------------------------------------------
   virtual ~Compressor();
-  
+
   //----------------------------------------------------------------------------
   void beginCompression(void);
-  
+
   //----------------------------------------------------------------------------
   void endCompression(void);
-  
+
   //----------------------------------------------------------------------------
   static void decompress(std::istream &source, std::ostream &sink);
-  
+
 private:
-  
-  ISerializable *obj_; 
-  
+
+  ISerializable *obj_;
+
   std::istream *istream_ = 0;
   std::shared_ptr<std::istream> uncompressedIstream_;
-  
+
   std::ostream *ostream_;
   std::shared_ptr<std::iostream> bufferedStream_;
-  
+
   Compressor();
-  
+
   //----------------------------------------------------------------------------
   /// Get zlib parameters necessary for (de)compressing genie archives.
   ///
   /// @return struct with set parameters
   //
   boost::iostreams::zlib_params getZlibParams(void) const;
-  
+
   //----------------------------------------------------------------------------
   /// Decompresses istream and sets uncompressedIstream_.
   //
   void startDecompression(void);
-  
+
   //----------------------------------------------------------------------------
   /// Closes decompressed stream.
   //
   void stopDecompression(void);
-  
+
   //----------------------------------------------------------------------------
   void startCompression(void);
-  
+
   //----------------------------------------------------------------------------
   void stopCompression(void);
-  
+
 };
 
 }

@@ -33,31 +33,6 @@
 namespace genie
 {
 
-struct XY
-{
-  uint32_t x;
-  uint32_t y;
-};
-
-inline bool operator<(const XY &l, const XY &r)
-{
-  return l.y == r.y ? l.x < r.x : l.y < r.y;
-}
-
-// Element for player_color vector, the vector stores position (x, y) of
-// a player color pixel and the palette index for the color
-struct PlayerColorXY
-{
-  uint32_t x;
-  uint32_t y;
-  uint8_t index;
-};
-
-inline bool operator<(const PlayerColorXY &l, const PlayerColorXY &r)
-{
-  return l.y == r.y ? l.x < r.x : l.y < r.y;
-}
-
 struct SlpFrameData
 {
   std::vector<uint8_t> pixel_indexes;

@@ -64,7 +64,7 @@ public:
   ///                                   doesn't exist, insufficient rights...)
   ///
   //
-  void load(void ) throw (std::ios_base::failure);
+  void load(void);
 
   //----------------------------------------------------------------------------
   /// Loads the object from file.
@@ -73,7 +73,7 @@ public:
   /// @exception std::ios_base::failure thrown if file can't be read (file
   ///                                   doesn't exist, insufficient rights...)
   //
-  virtual void load(const char *fileName) throw (std::ios_base::failure);
+  virtual void load(const char *fileName);
 
   //----------------------------------------------------------------------------
   /// Saves data to file. Can only be called if fileName is set through set
@@ -82,7 +82,7 @@ public:
   /// @exception std::ios_base::failure thrown if file can't be written (
   ///                                   insufficient rights...)
   //
-  void save(void ) throw (std::ios_base::failure);
+  void save(void);
 
   //----------------------------------------------------------------------------
   /// Saves data to a different file.
@@ -91,7 +91,7 @@ public:
   /// @exception std::ios_base::failure thrown if file can't be written (
   ///                                   insufficient rights...)
   //
-  virtual void saveAs(const char *fileName) throw (std::ios_base::failure);
+  virtual void saveAs(const char *fileName);
 
 protected:
 
