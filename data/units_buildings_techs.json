@@ -31,8 +31,8 @@
 		"melee_armor":2,
 		"pierce_armor":2,
 		"base_id":1,
-		"help_converter":26669,
-		"language_file_help":105669,
+		"help_converter":26670,
+		"language_file_help":105670,
 		"name":"LEGION",
 		"hit_points":75,
 		"line_of_sight":5,
@@ -5511,8 +5511,8 @@
 		"melee_armor":2,
 		"pierce_armor":1,
 		"base_id":275,
-		"help_converter":26451,
-		"language_file_help":105451,
+		"help_converter":26450,
+		"language_file_help":105450,
 		"name":"CENTU",
 		"hit_points":150,
 		"line_of_sight":5,
@@ -7231,8 +7231,8 @@
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":361,
-		"help_converter":26081,
-		"language_file_help":105081,
+		"help_converter":26117,
+		"language_file_help":105117,
 		"name":"THSWD",
 		"hit_points":60,
 		"line_of_sight":4,
@@ -15082,17 +15082,17 @@
 	},
 	"763" : {
 		"cost": {
-			"wood": 50,
+			"wood": 55,
 			"food": 0,
-			"gold": 50,
+			"gold": 55,
 			"stone": 0
 		},
 		"attack":5,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":763,
-		"help_converter":5433,
-		"language_file_help":84433,
+		"help_converter":26683,
+		"language_file_help":105683,
 		"name":"PLUME",
 		"hit_points":50,
 		"line_of_sight":6,
@@ -15122,9 +15122,9 @@
 	},
 	"765" : {
 		"cost": {
-			"wood": 50,
+			"wood": 55,
 			"food": 0,
-			"gold": 50,
+			"gold": 55,
 			"stone": 0
 		},
 		"attack":5,
@@ -15351,8 +15351,8 @@
 		"melee_armor":0,
 		"pierce_armor":6,
 		"base_id":778,
-		"help_converter":26106,
-		"language_file_help":105106,
+		"help_converter":26119,
+		"language_file_help":105119,
 		"name":"Canoe",
 		"hit_points":70,
 		"line_of_sight":8,
@@ -16291,8 +16291,8 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":825,
-		"help_converter":26667,
-		"language_file_help":105667,
+		"help_converter":26303,
+		"language_file_help":105303,
 		"name":"Amazon Warrior",
 		"hit_points":45,
 		"line_of_sight":3,
@@ -16711,8 +16711,8 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":846,
-		"help_converter":26100,
-		"language_file_help":105100,
+		"help_converter":26306,
+		"language_file_help":105306,
 		"name":"TDONK",
 		"hit_points":70,
 		"line_of_sight":6,
@@ -16791,8 +16791,8 @@
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":850,
-		"help_converter":26683,
-		"language_file_help":105683,
+		"help_converter":26304,
+		"language_file_help":105304,
 		"name":"Amazon Archer",
 		"hit_points":45,
 		"line_of_sight":6,
@@ -16998,7 +16998,7 @@
 		"line_of_sight":12,
 		"garrison_capacity":0,
 		"type":70,
-		"class":4
+		"class":10
 	},
 	"861" : {
 		"cost": {
@@ -17671,8 +17671,8 @@
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":894,
-		"help_converter":26081,
-		"language_file_help":105081,
+		"help_converter":26116,
+		"language_file_help":105116,
 		"name":"THSWD",
 		"hit_points":60,
 		"line_of_sight":4,
@@ -18687,18 +18687,18 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":10,
-		"melee_armor":10,
-		"pierce_armor":10,
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
 		"base_id":946,
-		"help_converter":26658,
-		"language_file_help":105658,
-		"name":"COBRA",
-		"hit_points":500,
-		"line_of_sight":12,
+		"help_converter":26000,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
 		"garrison_capacity":0,
-		"type":70,
-		"class":13
+		"type":10,
+		"class":-1
 	},
 	"947" : {
 		"cost": {
@@ -22614,7 +22614,7 @@
 		"help_converter":26175,
 		"language_file_help":105175,
 		"name":"BUFFALO",
-		"hit_points":7,
+		"hit_points":14,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -24274,7 +24274,7 @@
 		"help_converter":26288,
 		"language_file_help":105288,
 		"name":"KONNIK",
-		"hit_points":110,
+		"hit_points":100,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24314,7 +24314,7 @@
 		"help_converter":26290,
 		"language_file_help":105290,
 		"name":"EKONNIK",
-		"hit_points":130,
+		"hit_points":120,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24324,17 +24324,17 @@
 		"cost": {
 			"wood": 0,
 			"food": 50,
-			"gold": 80,
+			"gold": 40,
 			"stone": 0
 		},
-		"attack":12,
+		"attack":9,
 		"melee_armor":1,
 		"pierce_armor":2,
 		"base_id":1228,
 		"help_converter":26313,
 		"language_file_help":105313,
 		"name":"KESHIK",
-		"hit_points":100,
+		"hit_points":110,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24364,17 +24364,17 @@
 		"cost": {
 			"wood": 0,
 			"food": 50,
-			"gold": 80,
+			"gold": 40,
 			"stone": 0
 		},
-		"attack":14,
+		"attack":11,
 		"melee_armor":1,
 		"pierce_armor":3,
 		"base_id":1230,
 		"help_converter":26314,
 		"language_file_help":105314,
 		"name":"EKESHIK",
-		"hit_points":130,
+		"hit_points":140,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24394,7 +24394,7 @@
 		"help_converter":26315,
 		"language_file_help":105315,
 		"name":"KIPCHAK",
-		"hit_points":45,
+		"hit_points":40,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":70,
@@ -24434,7 +24434,7 @@
 		"help_converter":26327,
 		"language_file_help":105327,
 		"name":"EKIPCHAK",
-		"hit_points":50,
+		"hit_points":45,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":70,
@@ -24854,7 +24854,7 @@
 		"help_converter":26288,
 		"language_file_help":105288,
 		"name":"KONNIK",
-		"hit_points":110,
+		"hit_points":100,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24874,7 +24874,7 @@
 		"help_converter":26290,
 		"language_file_help":105290,
 		"name":"EKONNIK",
-		"hit_points":130,
+		"hit_points":120,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -24974,7 +24974,7 @@
 		"help_converter":26327,
 		"language_file_help":105327,
 		"name":"MKIPCHAK",
-		"hit_points":50,
+		"hit_points":45,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":70,
@@ -27164,10 +27164,10 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 30,
+			"gold": 45,
 			"stone": 0
 		},
-		"attack":10,
+		"attack":8,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":1370,
@@ -27204,10 +27204,10 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 30,
+			"gold": 45,
 			"stone": 0
 		},
-		"attack":12,
+		"attack":10,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":1372,
@@ -32471,14 +32471,14 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1635,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
+		"help_converter":26756,
+		"language_file_help":105756,
+		"name":"WFALL",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":20,
+		"class":14
 	},
 	"1636" : {
 		"cost": {
@@ -32491,14 +32491,14 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1636,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26528,
+		"language_file_help":105528,
+		"name":"ENVOY_D",
+		"hit_points":0,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":30,
+		"class":11
 	},
 	"1637" : {
 		"cost": {
@@ -37224,7 +37224,7 @@
 		},
 		"help_converter":28288,
 		"language_file_help":107288,
-		"name":"C-Bonus, Archers vs buildings"
+		"name":"C-Bonus, Archers vs buildings Age2"
 	},
 	"313" : {
 		"cost": {
@@ -41525,7 +41525,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Relic +1 cav attack 5"
+		"name":"RESERVED"
 	},
 	"704" : {
 		"cost": {
@@ -41613,7 +41613,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Cavalry +10% speed"
+		"name":"C-Bonus, Cavalry +5% speed Age2"
 	},
 	"712" : {
 		"cost": {
@@ -41765,9 +41765,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28288,
+		"language_file_help":107288,
+		"name":"C-Bonus, Archers vs buildings Age3"
 	},
 	"726" : {
 		"cost": {
@@ -41776,9 +41776,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28288,
+		"language_file_help":107288,
+		"name":"C-Bonus, Archers vs buildings Age4"
 	},
 	"727" : {
 		"cost": {
@@ -41789,7 +41789,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"C-Bonus, Cavalry +5% speed Age3"
 	},
 	"728" : {
 		"cost": {
@@ -41800,7 +41800,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"C-Bonus, Cavalry +5% speed Age4"
 	},
 	"729" : {
 		"cost": {
