@@ -11,6 +11,7 @@ Unit and Tech data, extracted from the Age of Empires II dat file
 
 ### Units
 
+```
 data->Civs[civ]->Units[i]->HitPoints
 data->Civs[civ]->Units[i]->Type50->DisplayedAttack
 data->Civs[civ]->Units[i]->Type50->DisplayedMeleeArmour
@@ -19,4 +20,4 @@ data->Civs[civ]->Units[i]->Creatable->ResourceCosts[Type=0]->Amount //Food
 data->Civs[civ]->Units[i]->Creatable->ResourceCosts[Type=1]->Amount //Wood
 data->Civs[civ]->Units[i]->Creatable->ResourceCosts[Type=2]->Amount //Stone
 data->Civs[civ]->Units[i]->Creatable->ResourceCosts[Type=3]->Amount //Gold
-
+```
