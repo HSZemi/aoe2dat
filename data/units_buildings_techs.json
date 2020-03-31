@@ -19798,7 +19798,7 @@
 		"line_of_sight":9,
 		"garrison_capacity":0,
 		"type":70,
-		"class":13
+		"class":55
 	},
 	"1002" : {
 		"cost": {
@@ -19838,7 +19838,7 @@
 		"line_of_sight":9,
 		"garrison_capacity":0,
 		"type":70,
-		"class":13
+		"class":55
 	},
 	"1004" : {
 		"cost": {
@@ -25023,18 +25023,18 @@
 	"1263" : {
 		"cost": {
 			"wood": 0,
-			"food": 65,
-			"gold": 20,
+			"food": 75,
+			"gold": 30,
 			"stone": 0
 		},
-		"attack":50,
+		"attack":20,
 		"melee_armor":0,
-		"pierce_armor":2,
+		"pierce_armor":0,
 		"base_id":1263,
 		"help_converter":26375,
 		"language_file_help":105375,
 		"name":"FCAMEL",
-		"hit_points":100,
+		"hit_points":55,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -27167,7 +27167,7 @@
 			"gold": 45,
 			"stone": 0
 		},
-		"attack":8,
+		"attack":9,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":1370,
@@ -27207,7 +27207,7 @@
 			"gold": 45,
 			"stone": 0
 		},
-		"attack":10,
+		"attack":11,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":1372,
@@ -30231,14 +30231,14 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1523,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26003,
+		"language_file_help":105003,
+		"name":"CityGate Corner (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1524" : {
 		"cost": {
@@ -37389,7 +37389,7 @@
 		},
 		"help_converter":28330,
 		"language_file_help":107330,
-		"name":"C-Bonus, Inf v Building"
+		"name":"C-Bonus, Inf v Building Age2"
 	},
 	"328" : {
 		"cost": {
@@ -37398,9 +37398,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28330,
+		"language_file_help":107330,
+		"name":"C-Bonus, Inf v Building Age3"
 	},
 	"329" : {
 		"cost": {
@@ -37409,9 +37409,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28330,
+		"language_file_help":107330,
+		"name":"C-Bonus, Inf v Building Age4"
 	},
 	"330" : {
 		"cost": {
@@ -37576,7 +37576,7 @@
 		},
 		"help_converter":28338,
 		"language_file_help":107338,
-		"name":"C-Bonus, Infantry Cost -35%"
+		"name":"C-Bonus, Infantry Cost -20%"
 	},
 	"345" : {
 		"cost": {
@@ -41831,9 +41831,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28338,
+		"language_file_help":107338,
+		"name":"C-Bonus, Infantry Cost -25%"
 	},
 	"732" : {
 		"cost": {
@@ -41842,9 +41842,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28338,
+		"language_file_help":107338,
+		"name":"C-Bonus, Infantry Cost -30%"
 	},
 	"733" : {
 		"cost": {
@@ -41853,9 +41853,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28338,
+		"language_file_help":107338,
+		"name":"C-Bonus, Infantry Cost -35%"
 	},
 	"734" : {
 		"cost": {
