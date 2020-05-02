@@ -17309,7 +17309,7 @@
 		},
 		"attack":12,
 		"melee_armor":4,
-		"pierce_armor":1,
+		"pierce_armor":2,
 		"base_id":876,
 		"help_converter":26471,
 		"language_file_help":105471,
@@ -17349,7 +17349,7 @@
 		},
 		"attack":14,
 		"melee_armor":6,
-		"pierce_armor":2,
+		"pierce_armor":3,
 		"base_id":878,
 		"help_converter":26471,
 		"language_file_help":105471,
@@ -19798,7 +19798,7 @@
 		"line_of_sight":9,
 		"garrison_capacity":0,
 		"type":70,
-		"class":55
+		"class":13
 	},
 	"1002" : {
 		"cost": {
@@ -19838,7 +19838,7 @@
 		"line_of_sight":9,
 		"garrison_capacity":0,
 		"type":70,
-		"class":55
+		"class":13
 	},
 	"1004" : {
 		"cost": {
@@ -24443,8 +24443,8 @@
 	"1234" : {
 		"cost": {
 			"wood": 0,
-			"food": 50,
-			"gold": 80,
+			"food": 70,
+			"gold": 50,
 			"stone": 0
 		},
 		"attack":12,
@@ -24483,8 +24483,8 @@
 	"1236" : {
 		"cost": {
 			"wood": 0,
-			"food": 50,
-			"gold": 80,
+			"food": 70,
+			"gold": 50,
 			"stone": 0
 		},
 		"attack":14,
@@ -32691,34 +32691,34 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1646,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26161,
+		"language_file_help":105161,
+		"name":"MRKT",
+		"hit_points":1800,
+		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1647" : {
 		"cost": {
-			"wood": 0,
+			"wood": 150,
 			"food": 0,
 			"gold": 0,
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":0,
-		"pierce_armor":0,
+		"melee_armor":3,
+		"pierce_armor":7,
 		"base_id":1647,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
-		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"help_converter":26174,
+		"language_file_help":105174,
+		"name":"TDWS4",
+		"hit_points":25000,
+		"line_of_sight":6,
+		"garrison_capacity":10,
+		"type":80,
+		"class":3
 	},
 	"1648" : {
 		"cost": {
@@ -32731,14 +32731,14 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1648,
-		"help_converter":26000,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26551,
+		"language_file_help":105551,
+		"name":"Trail Smoke (Gunpowder)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":20,
+		"class":11
 	},
 	"1649" : {
 		"cost": {
@@ -37464,9 +37464,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28338,
+		"language_file_help":107338,
+		"name":"C-Bonus, Inf Cav +1 armor Age3"
 	},
 	"335" : {
 		"cost": {
@@ -37475,9 +37475,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28338,
+		"language_file_help":107338,
+		"name":"C-Bonus, Inf Cav +1 armor Age4"
 	},
 	"336" : {
 		"cost": {
@@ -37563,9 +37563,9 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28338,
-		"language_file_help":107338,
-		"name":"C-Bonus, Infantry +1 armor"
+		"help_converter":28000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Free Loom"
 	},
 	"344" : {
 		"cost": {
@@ -39490,7 +39490,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Fisher Carry +25"
+		"name":"C-Bonus, Fishermen 10% faster"
 	},
 	"519" : {
 		"cost": {
@@ -40282,7 +40282,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, free pike"
+		"name":"C-Bonus, Free Pike"
 	},
 	"591" : {
 		"cost": {
@@ -40326,7 +40326,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"C-Bonus, free gold mining"
+		"name":"C-Bonus, Free Gold Mining"
 	},
 	"595" : {
 		"cost": {
@@ -41398,7 +41398,7 @@
 	"692" : {
 		"cost": {
 			"wood": 0,
-			"food": 800,
+			"food": 500,
 			"gold": 200,
 			"stone": 0
 		},
@@ -41866,7 +41866,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"Thalassocracy + Chemistry"
 	},
 	"735" : {
 		"cost": {
@@ -41877,7 +41877,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"Thalassocracy + Murder Holes"
 	},
 	"736" : {
 		"cost": {
@@ -41888,7 +41888,7 @@
 		},
 		"help_converter":28000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"Thalassocracy + Heated Shot"
 	},
 	"737" : {
 		"cost": {
