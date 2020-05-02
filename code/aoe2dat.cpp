@@ -14,7 +14,7 @@ using namespace std;
 #define ARM_PIERCE 3
 #define ARM_MELEE 4
 
-int main() {
+int main(int argc, char** argv) {
 	ofstream myfile;
 	ofstream jayson;
 	myfile.open("units_buildings_techs.json");
@@ -24,7 +24,7 @@ int main() {
 
 	genie::DatFile *df = new genie::DatFile();
 	df->setGameVersion(genie::GV_LatestDE2);
-	df->load("empires2_x2_p1.dat");
+	df->load(argv[1]);
 
 	cout << "Extracting json data..." << endl;
 

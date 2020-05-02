@@ -1,11 +1,40 @@
 # aoe2dat
-Unit and Tech data, extracted from the Age of Empires II dat file
+Extract Unit and Tech data from the Age of Empires II dat file
 
-## Structure
+## Cloning this repository
 
-- `code` contains the C++ code that takes the Age of Empires II `.dat` file as an input and produces a `.json` file that contains data from the `.dat` file in basically the same structure.
-- `bin` contains a compiled version of above code for linux - no idea if it will work or even execute on another machine
-- `data` contains the `json` output, ready to be further processed by third-party applications. It also contains python scripts to extract interesting data.
+This repository uses git submodules, so clone it like this:
+
+```
+git clone --recurse-submodules <url>
+```
+
+## Compiling
+
+You will need cmake >3.0.0 and (some development dependencies).
+
+```
+cd code
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+
+You should get a `aoe2dat` executable in the `build` folder.
+
+## Using
+
+Call the `aoe2dat` executable with your `dat` file as an argument, for example:
+
+```
+./aoe2dat ~/aoe/Aoe2DE\ proton/resources/_common/dat/empires2_x2_p1.dat
+```
+
+You will get some console output and two files will be created in your current directory: 
+
+- `full.json` which contains all extracted data, and 
+- `units_buildings_techs.json`, a subset of the data which is used for [Halfon](https://github.com/SiegeEngineers/halfon).
 
 ## Useful Paths
 

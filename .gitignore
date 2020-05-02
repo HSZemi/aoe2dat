@@ -1,9 +1,7 @@
 .idea
-Age2HD
-code/Debug
-bin/*.json
+cmake-build-debug
+code/build
 code/*.json
-empires2_x2_p1.dat
 .directory
 *.swp
 # Prerequisites

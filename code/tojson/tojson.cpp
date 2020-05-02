@@ -3,7 +3,7 @@
 #include <fstream>
 #include <set>
 #include "genie/dat/DatFile.h"
-#include "tojson/tojson.h"
+#include "tojson.h"
 #include <boost/algorithm/string/join.hpp>
 
 void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
@@ -544,8 +544,17 @@ void bird2json(std::ofstream& out, genie::unit::Bird bird) {
 	out << "\"DefaultTaskID\":" << bird.DefaultTaskID << "," << std::endl;
 	out << "\"SearchRadius\":" << bird.SearchRadius << "," << std::endl;
 	out << "\"WorkRate\":" << bird.WorkRate << "," << std::endl;
-	out << "\"DropSite\":[" << bird.DropSite.first << ","
-			<< bird.DropSite.second << "]," << std::endl;
+	out << "\"DropSites\":[" << std::endl;
+	long dsize = bird.DropSites.size();
+	long dcount = 0;
+	for(short dropSite : bird.DropSites){
+	    out << dropSite;
+		if (++dcount < dsize) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]," << std::endl;
 	out << "\"TaskSwapGroup\":" << std::to_string(bird.TaskSwapGroup) << ","
 			<< std::endl;
 	out << "\"AttackSound\":" << bird.AttackSound << "," << std::endl;
