@@ -1,0 +1,628 @@
+AOK Scenario (SCN/SCX) format, by DiGiT
+This format is missing many new finds.
+Tab-size: 4
+
+=== Introduction ===
+
+The AOK scenario format is actually shared by Age of Empires I, Age of Empires
+II, and Star Wars: Galactic Battlegrounds. Every file has a 4-byte version
+string at the very beginning which identifies the program that made the
+scenario. (See "Versions" table below.) After the reasonably short header, the
+scenario data is compressed using the DEFLATE method. I have not found any
+value to store the uncompressed length, so the data must be decompressed in
+chunks.
+
+=== Versions ===
+
+As mentioned above, multiple games share the same file format. The version is
+determined by a 4-character version string (see Header below). There is also a
+second version number, stored as a single-precision floating point, that is
+used for versions greater than 1.21.
+
+-------------------------------------
+| Ver1 | Ver2 | Desc                |
+=====================================
+| 1.10 | ???? | Age of Empires I    |
+| 1.18 | 1.18 | Age of Empires II   |
+| 1.21 | 1.22 | AoE II: TC          |
+| 1.21 | 1.30 | SW: GB              |
+-------------------------------------
+
+=== Intro to the format ===
+
+The scenario data actually has room for 16 players, not the 9 that are needed by
+AOE and AOK (with GAIA). Beware when enabling more than 8 players, it has not
+been tested. Also, as far as I've seen, all the data in the scenario is treated
+as signed by AOK, which can lead to tricks such as negative tributes, but also
+opens up the possibility for easy crashing from overflows and the like. Any
+editor made to manipulate this format must take care with the data. AOK is very
+sensitive about this data being exactly how it likes it, so even seemingly
+harmless changes like zero-ing a useless data section can crash it.
+
+The general layout of the scenario is:
+
+=======================================
+| Uncompressed | File Header          |
+---------------------------------------
+|              | C. Header            |
+|              | Message & Cinematics |
+|              | Player Data 2        |
+|              | Global Victory       |
+| Compressed   | Map                  |
+|              | Units                |
+|              | Player Data 3        |
+|              | Triggers             |
+|              | AI Files             |
+=======================================
+
+I've written the data structures in the file in two formats: a more
+human-readable, tabular one, and a pseudo-C version for those of you that are
+familiar with that style. Below are a couple typedefs that I use as shorthand
+throughout the file.
+
+typedef long BOOL;	//most boolean values are stored as 4 bytes
+
+struct POINT
+{
+	long x, y;
+};
+
+struct String
+{
+	short len;
+	char data[len];	//this is not possible in C, of course.
+};
+
+=== The "hex" ===
+
+A note about data lengths: they specify both the length of the data and
+how to interpret it. For example:
+
+* s32 is a signed 32-bit integer
+* u16 is an unsigned 16-bit integer
+* f32 is a 32-bit (single-precision) floating point number
+* c4 is a 4-byte character string
+* str16 is a variable-length character string (see below)
+* 40 means 40 bytes of data
+* 16*u16 means 16 unsigned 16-bit integers
+
+Variable-length character strings are stored in the scenario as length/data
+pairs. For example "str16" means there is a 16-bit length field with value n
+followed by n bytes (characters). str32 is also used, but more rarely.
+
+Uncompressed header:
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+c4     |        | Version (ASCII): 1.10, 1.18, 1.21
+u32    |        | Length of header (excluding version and self)
+s32    |        | Unknown cosntant = 2
+u32    |        | Timestamp of last save
+str32  |        | Scenario Instructions
+u32    |        | Unknown constant = 0
+u32    |        | Player count (thanks iberico)
+
+**** Compression Starts Here ****
+
+==== Compressed header ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | Next unit ID to place
+f32    |        | Version 2 (see above)
+16*256 |        | ASCII player names
+16*u32 | 1.18   | string table player names
+16*16  |        | Player Data 1 (see below)
+u32    |        | Unknown, usually 1
+c1     |        | Unknown 0 ??
+f32    |        | Unknown, always -1?
+str16  |        | Original filename
+
+Sub-struct, Player Data 1:
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | Active, boolean
+u32    |        | Human, boolean
+u32    |        | Civilization, see IDs at bottom
+u32    |        | Unknown constant = 4
+
+==== Messages and Cinematics ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    | 1.18   | String table, Instructions
+u32    | 1.18   | String table, Hints
+u32    | 1.18   | String table, Victory
+u32    | 1.18   | String table, Loss
+u32    | 1.18   | String table, History
+u32    | 1.22   | String table, Scouts
+str16  |        | ASCII, Instructions
+str16  |        | ASCII, Hints
+str16  |        | ASCII, Victory
+str16  |        | ASCII, Loss
+str16  |        | ASCII, History
+str16  | 1.22   | ASCII, Scouts
+str16  |        | ASCII, Pregame cinematic filename
+str16  |        | ASCII, Victory cinematic filename
+str16  |        | ASCII, Loss cinematic filename
+str16  |        | ASCII, Background filename
+u32    |        | Bitamp included, Boolean
+u32    |        | Bitmap width
+s32    |        | Bitmap height
+s16    |        | Unknown, -1 if there's a bitmap, 1 otherwise
+40     |        | BITMAPINFOHEADER (Google it)
+SIZE   |        | Bitmap, SIZE calculated from above
+
+==== Player Data 2 ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+32str16|        | Unknown strings (2 per player?)
+16str16|        | AI names, one per player
+16*var |        | AI files, see sub-struct below
+16*u8  |        | AI type, 0 = custom, 1 = standard, 2 = none. Thanks iberico.
+u32    |        | Separator, 0xFFFFFF9D
+16*24  |        | Resources, see sub-struct below
+
+Sub-struct, AI file:
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | unknown, always 0
+u32    |        | unknown, always 0
+str32  |        | AI .per file text
+
+Sub-struct, resources:
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | Gold
+u32    |        | Wood
+u32    |        | Food
+u32    |        | Stone
+u32    |        | "Ore X"
+u32    |        | padding, always 0
+
+==== Global Victory ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | Separator, 0xFFFFFF9D
+u32    |        | Boolean: conquest required? (for custom vict)
+u32    |        | Unused = 0
+u32    |        | Number of relics required
+u32    |        | Unused = 0
+u32    |        | Explored % required
+u32    |        | Unused = 0
+u32    |        | Boolean: all custom conditions required?
+u32    |        | Mode, see below
+u32    |        | Required score for score victory
+u32    |        | Time for timed game, in 10ths of a year (eg, 100 = 10yr)
+
+Victory modes:
+0  Standard
+1  Conquest
+2  Score
+3  Timed
+4  Custom
+
+==== Diplomacy ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+16*64  |        | Per-player diplomacy, see sub-struct below
+11520  |        | Unused, always 0. Yes, that's 11520 bytes.
+u32    |        | Separator, 0xFFFFFF9D (why here??)
+16*u32 |        | Allied vict, per-player. Ignored (see PData3). Thanks iberico.
+
+Sub-struct per-player diplomacy:
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+16*u32 |        | Stance with each player, 0 = allied, 1 = neutral, 3 = enemy
+
+==== Disables ====
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+16*u32 |        | Per-player, number of disabled techs
+16*120 |        | Per-player, Disabled technology IDs (30*u32)
+16*120 | 1.30   | Per-player, Extra disabled technologies (30*u32)
+16*u32 |        | Per-player, number of disabled units
+16*120 |        | Per-player, Disabled unit IDs (30*u32)
+16*120 | 1.30   | Per-player, Extra disabled units (30*u32)
+16*u32 |        | Per-player, number of disabled buildings
+16*80  |        | Per-player, Disabled building IDs (20*u32)
+16*160 | 1.30   | Per-player, Extra disabled buildings (40*u32)
+u32    |        | Unused = 0
+u32    |        | Unused = 0
+u32    |        | Boolean: all techs?
+16*u32 |        | Per-player, starting age. See below.
+
+Starting age values:
+-1   None selected
+0    Dark Age
+1    Fuedal Age
+2    Castle Age
+3    Imperial Age
+4    Post-imperial Age
+
+==== Map ====
+
+The terrain data in the map is stored as a 2-D (square) array, even though, of
+course, AOK displays it as a diamond. The origin (0,0) is in the upper-left of
+the square which becomes the left corner of the diamond. It is stored in
+row-major form.
+
+In this document, I have decided to call the row indices x and the col indices
+y. This appears contradictory to conventions, but becomes more natural when
+the map is displayed in diamond form in a user-facing application such as
+AOKTS.
+
+Length | MinVer | Description
+---------------------------------------------------------------------
+u32    |        | Separator, 0xFFFFFF9D
+s32    |        | Player 1 camera, Y
+s32    |        | Player 1 camera, X
+s32    | 1.21   | AI Type (see list at bottom)
+u32    |        | Map Width (AOK caps at 256)
+u32    |        | Map Height (AOK caps at 256)
+var*3  |        | Terrain data, see sub-struct below
+
+Sub-struct terrain:
+
+length | minver | description
+---------------------------------------------------------------------
+u8     |        | terrain id, see list at bottom
+u8     |        | elevation
+u8     |        | unused = 0
+
+==== Units Section ====
+
+length | minver | description
+---------------------------------------------------------------------
+u32    |        | number of unit sections, N. I've always seen = 9.
+8*28   |        | Player Data 4, see sub-struct below
+N*var  |        | Player Units, see sub-struct below. GAIA units come first.
+
+Sub-struct Player Data 4:
+
+length | minver | description
+---------------------------------------------------------------------
+f32    |        | Food, duplicate
+f32    |        | Wood, duplicate
+f32    |        | Gold, duplicate
+f32    |        | Stone, duplicate
+f32    |        | "Ore X", duplicate
+f32    |        | Padding = 0.0. Not in SW:GB.
+f32    | 1.21   | Population limit
+
+Sub-struct Player Units:
+
+length | minver | description
+---------------------------------------------------------------------
+u32    |        | Unit count, N
+N*29   |        | Units, see sub-struct below
+
+Sub-struct Unit:
+
+length | minver | description
+---------------------------------------------------------------------
+f32    |        | X position
+f32    |        | Y position
+f32    |        | Unknown = 2
+u32    |        | ID (for triggers, etc.)
+u16    |        | Unit "constant", e.g. Archer, Man-at-arms
+u8     |        | Unknown = 2
+f32    |        | Rotation, in radians
+u16    |        | Initial animation frame
+u32    |        | Garrisonned in ID
+
+==== Player Data 3 Section ====
+
+length | minver | description
+---------------------------------------------------------------------
+u32    |        | Number of players? Always = 9
+8*64   |        | Player Data 3, per player. See sub-struct below.
+f64    |        | Unknown = 1.6
+
+Sub-struct Player Data 3:
+
+length | minver | description
+---------------------------------------------------------------------
+str16  |        | Constant name, like "Player 1"
+f32    |        | Initial Camera, X (for Player 1 = editor camera)
+f32    |        | " ", Y
+s16    |        | Unknown, similar to camera X
+s16    |        | Unknown, similar to camera Y
+u8     |        | Allied Victory (AOK reads this one)
+u16    |        | Player count for diplomacy, N
+N*u8   |        | Diplomacy: 0 = allied, 1 = neutral, 2 = ?, 3 = enemy
+N*u32  |        | Diplomacy: 0=GAIA, 1=self, 2=allied, 3=neutral, 4=enemy
+u32    |        | Color, see values below
+f32    |        | Unknown, affects below items
+u16    |        | Unknown, N
+8*u8   |        | Only included if above f32 value == 2.0
+N*44   |        | Unknown structure, found in Grand Theft Empires
+7*u8   |        | Usually 0
+s32    |        | Seems to be 0 if Unknown == 1.0, -1 if Unknown == 2.0
+
+==== Triggers Section ====
+
+length | minver | description
+---------------------------------------------------------------------
+s8     |        | Unknown == 0
+s32    |        | Number of triggers = 0
+N*var  |        | Trigger data, see sub-struct below
+N*u32  |        | Trigger display order array
+
+Trigger sub-structure:
+
+length | minver | description
+---------------------------------------------------------------------
+u32    |        | Boolean: enabled?
+u32    |        | Boolean: looping?
+u8     |        | Unknown
+u8     |        | Boolean: objective?
+u32    |        | Description order (in objectives)
+u32    |        | Unknown == 0
+str32  |        | Trigger description
+str32  |        | Trigger name (max 44 characters in UI)
+s32    |        | Number of effects = N
+N*var  |        | Effect data, see sub-struct below
+N*s32  |        | Effect display order array
+s32    |        | Number of conditions = N
+N*var  |        | Condition data, see sub-struct below
+N*s32  |        | Condition display order array
+
+struct POINT
+{
+	long x, y;
+};
+
+struct Effect
+{
+	long type;	//see constants below
+	long check;	//always = 0x17. For internal use by AOK (and AOKTS).
+	long ai_goal;	//AI Script goal
+	long amount;	//used for resources, hp, attack
+	long resource;	//resource type (stone = 2)
+	long diplomacy;	//state for change diplomacy (see constants below)
+	long num_selected;	//number of units selected
+	long location_unit;	//Unit ID for location setting
+	long unit_type;	//unit constant for create object, etc.
+	long player_source;
+	long player_target;
+	long technology;	//see "Complete Constant Lists" in AOKH utilities
+	long stringid;	//as in string table
+	long unknown;
+	long display_time;	//for Display Instructions
+	long trigger;	//trigger index for Activate/Deactivate Trigger
+	POINT location;
+	POINT area_ll;	//lower-left corner of area
+	POINT area_ur;	//upper-right corner
+	long unit_group;
+	long unit_type;	//Civilian, Military, Building, Other
+	long instruction_panel;
+	long text_len;
+	char text[text_len];	//Instructions/Chat
+	long sound_len;
+	char sound_file[sound_len];
+	long unit_ids[num_selected];
+};
+
+struct Condition
+{
+	long type;	//see constants below
+	long check;	//always = 0x10 (for internal use)
+	long amount;	//of objects, difficult level
+	long resource;	//resource type (see constants below)
+	long unit_object;
+	long unit_location;
+	long unit_type;
+	long player;
+	long technology;	//see "Complete Constant Lists" in AOKH utilities
+	long timer;
+	long unknown;
+	POINT area_ll;
+	POINT area_ur;
+	long unit_group;	//see constants below
+	long unit_type;	//Civilian, Military, Building, Other
+	long ai_signal;
+};
+
+==== Included Files ====
+
+length | minver | description
+---------------------------------------------------------------------
+u32    |        | Boolean: files included?
+u32    |        | Boolean: ES-only data included?
+396    |        | ES-only data, if flag is true (meaning unknown)
+var    |        | Included files
+
+*** Various Constants ***
+
+enum Player_Colors
+{
+	Blue,
+	Red,
+	Green,
+	Yellow,
+	Cyan,
+	Purple,
+	Gray,
+	Orange
+};
+
+enum Civilizations
+{
+	Britons = 1,
+	Franks,
+	Goths,
+	Teutons,
+	Japanese,
+	Chinese,
+	Byzantines,
+	Persians,
+	Saracens,
+	Turks,
+	Vikings,
+	Mongols,
+	Celts,
+	Spanish,
+	Aztecs,
+	Mayans,
+	Huns,
+	Koreans
+}
+
+Const	Value
+-------------------------
+AI Map Types:
+9	Arabia
+0A	Archipelago
+0B	Baltic
+0C	Black forest
+0D	Coastal
+0E	Continental
+0F	Crater lake
+10	Fortress
+11	Gold rush
+12	Highland
+13	Islands
+14	Mediterranean
+15	Migration
+16	Rivers
+17	Team islands
+18	
+19	Scandinavia
+1A	
+1B	Yucatan
+1C	Salt marsh
+1D	
+1E	King of the hill
+1F	Oasis
+21	Nomad
+
+Unit Groups:
+0	Archer
+2	Trade Boat
+3	Building
+4	Civilian
+6	Soldier
+12	Cavalry
+13	Siege Weapon
+18	Priest
+20	Transport Boat
+21	Fishing Boat
+22	War Boat
+23	Conquistador
+27	Walls
+30	Flags
+36	Cavalry Archer
+39	Gates
+44	Hand Cannoneer
+45	2-handed Swordsman
+46	Pikeman
+47	Scout Cavalry
+49	Farm
+50	Spearman
+51	Packed Siege Weapon
+52	Tower
+54	Unpacked Siege Weapon
+58	Sheep
+59	King
+
+Resource Type:
+0B	Population
+
+Effects:
+1	Change Diplomacy
+2	Research Technology
+3	Send Chat
+4	Play Sound
+5	Send Tribute
+6	Unlock Gate
+7	Lock Gate
+8	Activate Trigger
+9	Deactivate Trigger
+A	AI Script Goal
+B	Create Object
+C	Task Object
+D	Declare Victory
+E	Kill Object
+F	Remove Object
+10	Change View
+11	Unload
+12	Change Ownership
+13	Patrol
+14	Display Instructions
+15	Clear Instructions
+16	Freeze Unit
+17	Use Advanced Buttons
+18	Damage Object
+19	Place Foundation
+1A	Change Object Name
+1B	Change Object HP
+1C	Change Object Attack
+1D	Stop Unit
+1E  Snap View
+1F  Unknown
+20  Enable Tech
+21  Disable Tech
+22  Enable Unit
+23  Disable Unit
+24  Flash Objects
+
+Conditions:
+1	Bring Object to Area 
+2	Bring Object to Object 
+3	Own Objects 
+4	Own Fewer Objects 
+5	Objects in Area 
+6	Destroy Object 
+7	Capture Object 
+8	Accumulate Attribute 
+9	Research Tehcnology 
+A	Timer 
+B	Object Selected 
+C	AI Signal 
+D	Player Defeated 
+E	Object Has Target 
+F	Object Visible 
+10	Object Not Visible 
+11	Researching Technology 
+12	Units Garrisoned
+13	Difficulty Level
+14  Own Fewer Foundations
+15  Selected Objects in Area
+16  Powered Objects in Area
+17  Units Queued Past Pop Cap
+
+enum ResourceTypes
+{
+	RES_Food,
+	RES_Wood,
+	RES_Stone,
+	RES_Gold,
+	RES_Relics = 7,
+	RES_Population = 11,
+	RES_Kills = 20,
+	RES_Technologies,
+	RES_Villager Population = 37,
+	RES_Military Population = 40,
+	RES_Conversions,
+	RES_Razings = 43,
+	RES_Kill Ratio
+};
+
+enum DifficultyLevels
+{
+	Easiest,
+	Standard,
+	Moderate,
+	Hard,
+	Hardest
+};
+
