@@ -90,6 +90,8 @@ int main(int argc, char** argv) {
 			myfile << "\t\t\"base_id\":" << unit.BaseID << "," << endl;
 			myfile << "\t\t\"help_converter\":" << unit.LanguageDLLHelp - 79000
 					<< "," << endl;
+			myfile << "\t\t\"language_file_name\":" << unit.LanguageDLLName
+					<< "," << endl;
 			myfile << "\t\t\"language_file_help\":" << unit.LanguageDLLHelp
 					<< "," << endl;
 			myfile << "\t\t\"name\":\"" << unit.Name << "\"," << endl;
@@ -146,6 +148,8 @@ int main(int argc, char** argv) {
 		myfile << "\t\t}," << endl;
 		myfile << "\t\t\"help_converter\":" << tech.LanguageDLLHelp - 79000
 				<< "," << endl;
+        myfile << "\t\t\"language_file_name\":" << tech.LanguageDLLName
+               << "," << endl;
 		myfile << "\t\t\"language_file_help\":" << tech.LanguageDLLHelp << ","
 				<< endl;
 		myfile << "\t\t\"name\":" << "\"" << tech.Name << "\"" << endl;
