@@ -53,6 +53,17 @@ void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 		out << std::endl;
 	}
 	out << "]," << std::endl;
+	out << "\"Graphics\":[" << std::endl;
+	long graphicsize = datFile->Graphics.size();
+	long graphiccount = 0;
+	for (genie::Graphic graphic : datFile->Graphics) {
+        graphic2json(out, graphic);
+		if (++graphiccount < graphicsize) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]," << std::endl;
 	out << "\"TechTree\":" << std::endl;
 	techtree2json(out, datFile->TechTree);
 	out << std::endl;
@@ -85,6 +96,116 @@ void effectcommand2json(std::ofstream& out,
 	out << "\"C\":" << effectCommand.C << "," << std::endl;
 	out << "\"D\":" << effectCommand.D << "" << std::endl;
 	out << "}";
+}
+
+void graphic2json(std::ofstream& out, genie::Graphic graphic) {
+	out << "{" << std::endl;
+	out << "\"FileName\":\"" << graphic.FileName << "\","
+			<< std::endl;
+	out << "\"ParticleEffectName\":\"" << graphic.ParticleEffectName << "\","
+			<< std::endl;
+	out << "\"FirstFrame\":" << graphic.FirstFrame << ","
+			<< std::endl;
+	out << "\"SLP\":" << graphic.SLP << ","
+			<< std::endl;
+	out << "\"IsLoaded\":" << std::to_string(graphic.IsLoaded) << ","
+			<< std::endl;
+	out << "\"OldColorFlag\":" << std::to_string(graphic.OldColorFlag) << ","
+			<< std::endl;
+	out << "\"Layer\":" << std::to_string(graphic.Layer) << ","
+			<< std::endl;
+	out << "\"PlayerColor\":" << std::to_string(graphic.PlayerColor) << ","
+			<< std::endl;
+	out << "\"Rainbow\":" << std::to_string(graphic.Rainbow) << ","
+			<< std::endl;
+	out << "\"TransparentSelection\":" << std::to_string(graphic.TransparentSelection) << ","
+			<< std::endl;
+	out << "\"Coordinates\":[" << std::endl;
+    long size = graphic.Coordinates.size();
+    long count = 0;
+    for (int16_t coordinate : graphic.Coordinates) {
+        out << coordinate;
+        if (++count < size) {
+            out << ",";
+        }
+        out << std::endl;
+    }
+    out << "]," << std::endl;
+	out << "\"SoundID\":" << graphic.SoundID << ","
+			<< std::endl;
+	out << "\"WwiseSoundID\":" << graphic.WwiseSoundID << ","
+			<< std::endl;
+	out << "\"AngleSoundsUsed\":" << std::to_string(graphic.AngleSoundsUsed) << ","
+			<< std::endl;
+	out << "\"FrameCount\":" << graphic.FrameCount << ","
+			<< std::endl;
+	out << "\"AngleCount\":" << graphic.AngleCount << ","
+			<< std::endl;
+	out << "\"SpeedMultiplier\":" << graphic.SpeedMultiplier << ","
+			<< std::endl;
+	out << "\"FrameDuration\":" << graphic.FrameDuration << ","
+			<< std::endl;
+	out << "\"AnimationDuration\":" << graphic.AnimationDuration << ","
+			<< std::endl;
+	out << "\"ReplayDelay\":" << graphic.ReplayDelay << ","
+			<< std::endl;
+	out << "\"SequenceType\":" << std::to_string(graphic.SequenceType) << ","
+			<< std::endl;
+	out << "\"ID\":" << graphic.ID << ","
+			<< std::endl;
+	out << "\"MirroringMode\":" << std::to_string(graphic.MirroringMode) << ","
+			<< std::endl;
+	out << "\"EditorFlag\":" << std::to_string(graphic.EditorFlag) << ","
+			<< std::endl;
+    out << "\"Deltas\":[" << std::endl;
+    long deltassize = graphic.Deltas.size();
+    long deltascount = 0;
+    for (genie::GraphicDelta delta : graphic.Deltas) {
+        graphicdelta2json(out, delta);
+        if (++deltascount < deltassize) {
+            out << ",";
+        }
+        out << std::endl;
+    }
+    out << "]," << std::endl;
+    out << "\"AngleSounds\":[" << std::endl;
+    long anglesoundsize = graphic.AngleSounds.size();
+    long anglesoundcount = 0;
+    for (genie::GraphicAngleSound angleSound : graphic.AngleSounds) {
+        graphicanglesound2json(out, angleSound);
+        if (++anglesoundcount < anglesoundsize) {
+            out << ",";
+        }
+        out << std::endl;
+    }
+    out << "]" << std::endl;
+	out << "}";
+}
+
+void graphicdelta2json(std::ofstream& out, genie::GraphicDelta graphicDelta) {
+    out << "{" << std::endl;
+    out << "\"GraphicID\":" << graphicDelta.GraphicID << "," << std::endl;
+    out << "\"Padding1\":" << graphicDelta.Padding1 << "," << std::endl;
+    out << "\"SpritePtr\":" << graphicDelta.SpritePtr << "," << std::endl;
+    out << "\"OffsetX\":" << graphicDelta.OffsetX << "," << std::endl;
+    out << "\"OffsetY\":" << graphicDelta.OffsetY << "," << std::endl;
+    out << "\"DisplayAngle\":" << graphicDelta.DisplayAngle << "," << std::endl;
+    out << "\"Padding2\":" << graphicDelta.Padding2 << "" << std::endl;
+    out << "}";
+}
+
+void graphicanglesound2json(std::ofstream& out, genie::GraphicAngleSound graphicAngleSound) {
+    out << "{" << std::endl;
+    out << "\"FrameNum\":" << graphicAngleSound.FrameNum << "," << std::endl;
+    out << "\"SoundID\":" << graphicAngleSound.SoundID << "," << std::endl;
+    out << "\"WwiseSoundID\":" << graphicAngleSound.WwiseSoundID << "," << std::endl;
+    out << "\"FrameNum2\":" << graphicAngleSound.FrameNum2 << "," << std::endl;
+    out << "\"SoundID2\":" << graphicAngleSound.SoundID2 << "," << std::endl;
+    out << "\"WwiseSoundID2\":" << graphicAngleSound.WwiseSoundID2 << "," << std::endl;
+    out << "\"FrameNum3\":" << graphicAngleSound.FrameNum3 << "," << std::endl;
+    out << "\"SoundID3\":" << graphicAngleSound.SoundID3 << "," << std::endl;
+    out << "\"WwiseSoundID3\":" << graphicAngleSound.WwiseSoundID3 << "" << std::endl;
+    out << "}";
 }
 
 void techtree2json(std::ofstream& out, genie::TechTree techtree) {

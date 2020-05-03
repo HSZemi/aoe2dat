@@ -13,6 +13,9 @@ void research2json(std::ofstream& out, genie::Tech tech); // genie::Tech
 void unit2json(std::ofstream& out, genie::Unit unit);
 void task2json(std::ofstream& out, genie::Task task);
 void playercolour2json(std::ofstream& out, genie::PlayerColour pc);
+void graphic2json(std::ofstream& out, genie::Graphic graphic);
+void graphicdelta2json(std::ofstream& out, genie::GraphicDelta graphicDelta);
+void graphicanglesound2json(std::ofstream& out, genie::GraphicAngleSound graphicAngleSound);
 void techtree2json(std::ofstream& out, genie::TechTree techtree);
 void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage);
 void buildingconnection2json(std::ofstream& out,
