@@ -18106,7 +18106,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 100,
-			"gold": 80,
+			"gold": 70,
 			"stone": 0
 		},
 		"attack":6,
@@ -18148,7 +18148,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 100,
-			"gold": 80,
+			"gold": 70,
 			"stone": 0
 		},
 		"attack":7,
@@ -34388,15 +34388,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1649,
-		"help_converter":26000,
+		"help_converter":26225,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105225,
+		"name":"Trophy None",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":3
 	},
 	"1650" : {
 		"cost": {
@@ -34409,15 +34409,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1650,
-		"help_converter":26000,
+		"help_converter":26225,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105225,
+		"name":"Trophy Bronze",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":3
 	},
 	"1651" : {
 		"cost": {
@@ -34430,15 +34430,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1651,
-		"help_converter":26000,
+		"help_converter":26225,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105225,
+		"name":"Trophy Silver",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":3
 	},
 	"1652" : {
 		"cost": {
@@ -34451,15 +34451,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1652,
-		"help_converter":26000,
+		"help_converter":26225,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105225,
+		"name":"Trophy Gold",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":3
 	},
 	"1653" : {
 		"cost": {
@@ -34472,15 +34472,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1653,
-		"help_converter":26000,
+		"help_converter":26225,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105225,
+		"name":"Trophy Platinum",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":3
 	},
 	"1654" : {
 		"cost": {
@@ -35584,7 +35584,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 750,
-			"gold": 800,
+			"gold": 700,
 			"stone": 0
 		},
 		"help_converter":28424,
@@ -44323,10 +44323,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28106,
+		"language_file_name":7106,
+		"language_file_help":107106,
+		"name":"Shadow New Workshop"
 	},
 	"738" : {
 		"cost": {
