@@ -34493,15 +34493,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1654,
-		"help_converter":26000,
+		"help_converter":26737,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105737,
+		"name":"Resources",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":27
 	},
 	"1655" : {
 		"cost": {
@@ -44323,10 +44323,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28106,
-		"language_file_name":7106,
-		"language_file_help":107106,
-		"name":"Shadow New Workshop"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
 	},
 	"738" : {
 		"cost": {
