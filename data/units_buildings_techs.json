@@ -21088,7 +21088,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 50,
-			"gold": 35,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":16,
@@ -21130,7 +21130,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 50,
-			"gold": 35,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":18,
@@ -25671,7 +25671,7 @@
 		},
 		"attack":12,
 		"melee_armor":1,
-		"pierce_armor":2,
+		"pierce_armor":1,
 		"base_id":1234,
 		"help_converter":26328,
 		"language_file_name":5328,
@@ -25713,7 +25713,7 @@
 		},
 		"attack":14,
 		"melee_armor":2,
-		"pierce_armor":2,
+		"pierce_armor":1,
 		"base_id":1236,
 		"help_converter":26329,
 		"language_file_name":5329,
@@ -34512,17 +34512,17 @@
 		},
 		"attack":0,
 		"melee_armor":0,
-		"pierce_armor":0,
+		"pierce_armor":7,
 		"base_id":1655,
-		"help_converter":26000,
+		"help_converter":26464,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105464,
+		"name":"Sheep building1",
+		"hit_points":-1,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":27
 	},
 	"1656" : {
 		"cost": {
@@ -34533,17 +34533,17 @@
 		},
 		"attack":0,
 		"melee_armor":0,
-		"pierce_armor":0,
+		"pierce_armor":7,
 		"base_id":1656,
-		"help_converter":26000,
+		"help_converter":26464,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105464,
+		"name":"Sheep annex1",
+		"hit_points":-1,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":27
 	},
 	"1657" : {
 		"cost": {
@@ -34554,17 +34554,17 @@
 		},
 		"attack":0,
 		"melee_armor":0,
-		"pierce_armor":0,
+		"pierce_armor":7,
 		"base_id":1657,
-		"help_converter":26000,
+		"help_converter":26464,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105464,
+		"name":"Sheep building2",
+		"hit_points":-1,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":27
 	},
 	"1658" : {
 		"cost": {
@@ -34575,17 +34575,17 @@
 		},
 		"attack":0,
 		"melee_armor":0,
-		"pierce_armor":0,
+		"pierce_armor":7,
 		"base_id":1658,
-		"help_converter":26000,
+		"help_converter":26464,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105464,
+		"name":"Sheep annex2",
+		"hit_points":-1,
+		"line_of_sight":0,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":80,
+		"class":27
 	},
 	"1659" : {
 		"cost": {
@@ -38155,10 +38155,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +50f +50w"
 	},
 	"224" : {
 		"cost": {
@@ -38167,10 +38167,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +50g"
 	},
 	"225" : {
 		"cost": {
@@ -38179,10 +38179,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, -100w"
 	},
 	"226" : {
 		"cost": {
@@ -39115,10 +39115,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28312,
+		"language_file_name":7000,
+		"language_file_help":107312,
+		"name":"C-Bonus, Extra sheep from TC"
 	},
 	"304" : {
 		"cost": {
@@ -39298,7 +39298,7 @@
 		"help_converter":-79000,
 		"language_file_name":0,
 		"language_file_help":0,
-		"name":"None"
+		"name":"Xolotl (make avail) azt"
 	},
 	"319" : {
 		"cost": {
@@ -39598,7 +39598,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Free Loom"
+		"name":"C-Bonus, Instant Loom"
 	},
 	"344" : {
 		"cost": {
@@ -39658,7 +39658,7 @@
 		"help_converter":-79000,
 		"language_file_name":0,
 		"language_file_help":0,
-		"name":"None"
+		"name":"Xolotl (make avail) may"
 	},
 	"349" : {
 		"cost": {
@@ -40018,7 +40018,7 @@
 		"help_converter":-79000,
 		"language_file_name":0,
 		"language_file_help":0,
-		"name":"None"
+		"name":"Xolotl (make avail) inc"
 	},
 	"379" : {
 		"cost": {
@@ -40102,7 +40102,7 @@
 		"help_converter":28364,
 		"language_file_name":7364,
 		"language_file_help":107364,
-		"name":"None"
+		"name":"C-Bonus, Lumberjacks 15% faster"
 	},
 	"386" : {
 		"cost": {
@@ -40114,7 +40114,7 @@
 		"help_converter":28365,
 		"language_file_name":7365,
 		"language_file_help":107365,
-		"name":"None"
+		"name":"C-Bonus, Siege fire rate"
 	},
 	"387" : {
 		"cost": {
@@ -40198,7 +40198,7 @@
 		"help_converter":28397,
 		"language_file_name":7000,
 		"language_file_help":107397,
-		"name":"None"
+		"name":"C-Bonus, Infantry +15% speed"
 	},
 	"394" : {
 		"cost": {
@@ -40894,7 +40894,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Tower Range +1"
+		"name":"C-Bonus, Archer armor free"
 	},
 	"452" : {
 		"cost": {
@@ -40906,7 +40906,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Tower Range +2"
+		"name":"C-Bonus, Light cavalry +1P armor"
 	},
 	"453" : {
 		"cost": {
@@ -40918,7 +40918,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Tower Range +3"
+		"name":"C-Bonus, Techs 30% faster"
 	},
 	"454" : {
 		"cost": {
@@ -41031,8 +41031,8 @@
 	"463" : {
 		"cost": {
 			"wood": 0,
-			"food": 400,
-			"gold": 300,
+			"food": 700,
+			"gold": 500,
 			"stone": 0
 		},
 		"help_converter":28312,
@@ -41542,7 +41542,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Camels Armor"
+		"name":"C-Bonus, Cavalry Armor Age3"
 	},
 	"506" : {
 		"cost": {
@@ -42103,10 +42103,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28316,
-		"language_file_name":0,
-		"language_file_help":107316,
-		"name":"Hunting Dogs"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cavalry Armor Age4"
 	},
 	"553" : {
 		"cost": {
@@ -42938,9 +42938,9 @@
 	},
 	"622" : {
 		"cost": {
-			"wood": 200,
+			"wood": 300,
 			"food": 0,
-			"gold": 300,
+			"gold": 450,
 			"stone": 0
 		},
 		"help_converter":28291,
@@ -43107,14 +43107,14 @@
 	"636" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Aztec Demolition ship (disable"
+		"name":"Xolotl post-imperial upgrade"
 	},
 	"637" : {
 		"cost": {
@@ -43546,7 +43546,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Battle ele +15% faste"
+		"name":"C-Bonus, Battle ele 10% faste"
 	},
 	"673" : {
 		"cost": {
@@ -44319,134 +44319,134 @@
 	"737" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7329,
+		"language_file_help":107316,
+		"name":"Resources last +15%"
 	},
 	"738" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7330,
+		"language_file_help":107316,
+		"name":"Resources last +30%"
 	},
 	"739" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7331,
+		"language_file_help":107316,
+		"name":"Resources last +40%"
 	},
 	"740" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7332,
+		"language_file_help":107316,
+		"name":"Resources last +50%"
 	},
 	"741" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7333,
+		"language_file_help":107316,
+		"name":"Resources last +75%"
 	},
 	"742" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7334,
+		"language_file_help":107316,
+		"name":"Resources last +100%"
 	},
 	"743" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7335,
+		"language_file_help":107316,
+		"name":"Resources last +125%"
 	},
 	"744" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7336,
+		"language_file_help":107316,
+		"name":"Resources last +150%"
 	},
 	"745" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7337,
+		"language_file_help":107316,
+		"name":"Resources last +175%"
 	},
 	"746" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7338,
+		"language_file_help":107316,
+		"name":"Resources last +200%"
 	},
 	"747" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28316,
+		"language_file_name":7339,
+		"language_file_help":107316,
+		"name":"Resources last +300%"
 	},
 	"748" : {
 		"cost": {
