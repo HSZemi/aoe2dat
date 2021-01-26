@@ -741,7 +741,19 @@ void creatable2json(std::ofstream& out, genie::unit::Creatable creatable) {
 	out << "\"SpecialAbility\":" << std::to_string(creatable.SpecialAbility)
 			<< "," << std::endl;
 	out << "\"DisplayedPierceArmour\":" << creatable.DisplayedPierceArmour
-			<< std::endl;
+            << "," << std::endl;
+	out << "\"SpawningGraphic\":" << creatable.SpawningGraphic
+            << "," << std::endl;
+	out << "\"UpgradeGraphic\":" << creatable.UpgradeGraphic
+            << "," << std::endl;
+	out << "\"MaxCharge\":" << creatable.MaxCharge
+            << "," << std::endl;
+	out << "\"RechargeRate\":" << creatable.RechargeRate
+            << "," << std::endl;
+	out << "\"ChargeEvent\":" << creatable.ChargeEvent
+            << "," << std::endl;
+	out << "\"ChargeType\":" << creatable.ChargeType
+            << std::endl;
 	out << "}";
 }
 
@@ -837,6 +849,7 @@ void type502json(std::ofstream& out, genie::unit::Type50 type50) {
 	out << "]," << std::endl;
 	out << "\"DefenseTerrainBonus\":" << type50.DefenseTerrainBonus << ","
 			<< std::endl;
+	out << "\"BonusDamageResistance\":" << type50.BonusDamageResistance << "," << std::endl;
 	out << "\"MaxRange\":" << type50.MaxRange << "," << std::endl;
 	out << "\"BlastWidth\":" << type50.BlastWidth << "," << std::endl;
 	out << "\"ReloadTime\":" << type50.ReloadTime << "," << std::endl;
