@@ -66,6 +66,9 @@ void datfile2json(std::ofstream& out, genie::DatFile* datFile) {
 	out << "]," << std::endl;
 	out << "\"TechTree\":" << std::endl;
 	techtree2json(out, datFile->TechTree);
+	out << "," << std::endl;
+	out << "\"TerrainBlock\":" << std::endl;
+	terrainblock2json(out, datFile->TerrainBlock);
 	out << std::endl;
 	out << "}" << std::endl;
 }
@@ -206,6 +209,40 @@ void graphicanglesound2json(std::ofstream& out, genie::GraphicAngleSound graphic
     out << "\"SoundID3\":" << graphicAngleSound.SoundID3 << "," << std::endl;
     out << "\"WwiseSoundID3\":" << graphicAngleSound.WwiseSoundID3 << "" << std::endl;
     out << "}";
+}
+
+void terrainblock2json(std::ofstream& out, genie::TerrainBlock terrainBlock) {
+	out << "{" << std::endl;
+	out << "\"Terrains\":[";
+	long size = terrainBlock.Terrains.size();
+	long count = 0;
+	for (genie::Terrain terrain : terrainBlock.Terrains) {
+		terrain2json(out, terrain);
+		if (++count < size) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]" << std::endl;
+	out << "}";
+}
+
+void terrain2json(std::ofstream& out, genie::Terrain terrain) {
+	out << "{" << std::endl;
+	out << "\"Name\":\"" << terrain.Name << "\"," << std::endl;
+	out << "\"Name2\":\"" << terrain.Name2 << "\"," << std::endl;
+	out << "\"Colors\":[" << std::endl;
+	long size = terrain.Colors.size();
+	long count = 0;
+	for (uint8_t color : terrain.Colors) {
+		out << std::to_string(color);
+		if (++count < size) {
+			out << ",";
+		}
+		out << std::endl;
+	}
+	out << "]" << std::endl;
+	out << "}";
 }
 
 void techtree2json(std::ofstream& out, genie::TechTree techtree) {

@@ -16,6 +16,8 @@ void playercolour2json(std::ofstream& out, genie::PlayerColour pc);
 void graphic2json(std::ofstream& out, genie::Graphic graphic);
 void graphicdelta2json(std::ofstream& out, genie::GraphicDelta graphicDelta);
 void graphicanglesound2json(std::ofstream& out, genie::GraphicAngleSound graphicAngleSound);
+void terrainblock2json(std::ofstream& out, genie::TerrainBlock terrainblock);
+void terrain2json(std::ofstream& out, genie::Terrain terrain);
 void techtree2json(std::ofstream& out, genie::TechTree techtree);
 void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage);
 void buildingconnection2json(std::ofstream& out,
