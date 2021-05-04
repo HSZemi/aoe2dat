@@ -1986,7 +1986,7 @@
 		"pierce_armor":0,
 		"base_id":94,
 		"help_converter":26076,
-		"language_file_name":5076,
+		"language_file_name":0,
 		"language_file_help":105076,
 		"name":"BRSRK",
 		"hit_points":75,
@@ -7672,7 +7672,7 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":1,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":365,
@@ -7693,7 +7693,7 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":1,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":366,
@@ -7903,7 +7903,7 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":1,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":376,
@@ -7924,7 +7924,7 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":1,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":377,
@@ -23338,7 +23338,7 @@
 			"gold": 15,
 			"stone": 0
 		},
-		"attack":6,
+		"attack":7,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":1123,
@@ -23380,7 +23380,7 @@
 			"gold": 15,
 			"stone": 0
 		},
-		"attack":7,
+		"attack":8,
 		"melee_armor":1,
 		"pierce_armor":1,
 		"base_id":1125,
@@ -28522,7 +28522,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 45,
+			"gold": 40,
 			"stone": 0
 		},
 		"attack":9,
@@ -28564,7 +28564,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 45,
+			"gold": 40,
 			"stone": 0
 		},
 		"attack":11,
@@ -34574,7 +34574,7 @@
 			"stone": 0
 		},
 		"attack":5,
-		"melee_armor":1,
+		"melee_armor":2,
 		"pierce_armor":2,
 		"base_id":1658,
 		"help_converter":26538,
@@ -34602,7 +34602,7 @@
 		"language_file_name":5540,
 		"language_file_help":105540,
 		"name":"ESERJEANT",
-		"hit_points":75,
+		"hit_points":85,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -34616,7 +34616,7 @@
 			"stone": 0
 		},
 		"attack":5,
-		"melee_armor":1,
+		"melee_armor":2,
 		"pierce_armor":2,
 		"base_id":1660,
 		"help_converter":26538,
@@ -34644,7 +34644,7 @@
 		"language_file_name":5540,
 		"language_file_help":105540,
 		"name":"EDSERJEANT",
-		"hit_points":75,
+		"hit_points":85,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -34718,7 +34718,7 @@
 			"wood": 75,
 			"food": 0,
 			"gold": 0,
-			"stone": 200
+			"stone": 175
 		},
 		"attack":5,
 		"melee_armor":1,
@@ -35918,8 +35918,8 @@
 	},
 	"37" : {
 		"cost": {
-			"wood": 500,
-			"food": 400,
+			"wood": 0,
+			"food": 0,
 			"gold": 0,
 			"stone": 0
 		},
@@ -36471,8 +36471,8 @@
 	"83" : {
 		"cost": {
 			"wood": 0,
-			"food": 400,
-			"gold": 400,
+			"food": 300,
+			"gold": 300,
 			"stone": 0
 		},
 		"help_converter":28324,
@@ -41390,9 +41390,9 @@
 	},
 	"493" : {
 		"cost": {
-			"wood": 400,
+			"wood": 600,
 			"food": 0,
-			"gold": 400,
+			"gold": 500,
 			"stone": 0
 		},
 		"help_converter":28287,
@@ -43126,7 +43126,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Infinite fish traps"
+		"name":"C-Bonus, 3x food fish traps"
 	},
 	"638" : {
 		"cost": {
@@ -43426,7 +43426,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Battle Ele cheaper"
+		"name":"C-Bonus, Battle Ele 30% cheaper"
 	},
 	"663" : {
 		"cost": {
@@ -43438,7 +43438,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Archers +15% HP"
+		"name":"C-Bonus, Battle Ele 40% cheaper"
 	},
 	"664" : {
 		"cost": {
