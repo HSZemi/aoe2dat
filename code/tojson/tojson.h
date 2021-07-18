@@ -35,8 +35,8 @@ void bird2json(std::ofstream& out, genie::unit::Bird bird);
 void deadfish2json(std::ofstream& out, genie::unit::DeadFish deadFish);
 // helper
 template<typename T> std::string join2string(std::vector<T> numbers);
-typedef genie::ResourceUsage<int16_t, int16_t, int8_t> ResearchResourceCost;
-typedef genie::ResourceUsage<int16_t, float, int8_t> ResourceStorage;
+typedef genie::ResourceUsage<int16_t, int16_t, unsigned char> ResearchResourceCost;
+typedef genie::ResourceUsage<int16_t, float, unsigned char> ResourceStorage;
 typedef genie::ResourceUsage<int16_t, int16_t, int16_t> ResourceCost;
 
 

@@ -116,8 +116,6 @@ void graphic2json(std::ofstream& out, genie::Graphic graphic) {
 			<< std::endl;
 	out << "\"PlayerColor\":" << std::to_string(graphic.PlayerColor) << ","
 			<< std::endl;
-	out << "\"Rainbow\":" << std::to_string(graphic.Rainbow) << ","
-			<< std::endl;
 	out << "\"TransparentSelection\":" << std::to_string(graphic.TransparentSelection) << ","
 			<< std::endl;
 	out << "\"Coordinates\":[" << std::endl;
@@ -277,10 +275,10 @@ void techtreeage2json(std::ofstream& out, genie::TechTreeAge techtreeage) {
 			<< std::to_string(techtreeage.NumBuildingLevels) << ","
 			<< std::endl;
 	out << "\"BuildingsPerZone\":["
-			<< join2string<int8_t>(techtreeage.BuildingsPerZone) << "],"
+			<< join2string<unsigned char>(techtreeage.BuildingsPerZone) << "],"
 			<< std::endl;
 	out << "\"GroupLengthPerZone\":["
-			<< join2string<int8_t>(techtreeage.GroupLengthPerZone) << "],"
+			<< join2string<unsigned char>(techtreeage.GroupLengthPerZone) << "],"
 			<< std::endl;
 	out << "\"MaxAgeLength\":" << std::to_string(techtreeage.MaxAgeLength)
 			<< "," << std::endl;
@@ -318,10 +316,10 @@ void buildingconnection2json(std::ofstream& out,
 			<< std::to_string(buildingconnection.LocationInAge) << ","
 			<< std::endl;
 	out << "\"UnitsTechsTotal\":["
-			<< join2string<int8_t>(buildingconnection.UnitsTechsTotal) << "],"
+			<< join2string<unsigned char>(buildingconnection.UnitsTechsTotal) << "],"
 			<< std::endl;
 	out << "\"UnitsTechsFirst\":["
-			<< join2string<int8_t>(buildingconnection.UnitsTechsFirst) << "],"
+			<< join2string<unsigned char>(buildingconnection.UnitsTechsFirst) << "],"
 			<< std::endl;
 	out << "\"LineMode\":" << buildingconnection.LineMode << "," << std::endl;
 	out << "\"EnablingResearch\":" << buildingconnection.EnablingResearch
@@ -542,8 +540,6 @@ void unit2json(std::ofstream& out, genie::Unit unit) {
 		out << "\"GraphicID\":" << dg.GraphicID << "," << std::endl;
 		out << "\"DamagePercent\":" << std::to_string(dg.DamagePercent) << ","
 				<< std::endl;
-		out << "\"OldApplyMode\":" << std::to_string(dg.OldApplyMode) << ","
-				<< std::endl;
 		out << "\"ApplyMode\":" << std::to_string(dg.ApplyMode) << std::endl;
 		out << "}";
 		if (++dgcount < dgsize) {
@@ -745,6 +741,8 @@ void creatable2json(std::ofstream& out, genie::unit::Creatable creatable) {
 	out << "\"SpawningGraphic\":" << creatable.SpawningGraphic
             << "," << std::endl;
 	out << "\"UpgradeGraphic\":" << creatable.UpgradeGraphic
+            << "," << std::endl;
+	out << "\"HeroGlowGraphic\":" << creatable.HeroGlowGraphic
             << "," << std::endl;
 	out << "\"MaxCharge\":" << creatable.MaxCharge
             << "," << std::endl;

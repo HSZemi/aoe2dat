@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
 	cout << "Extracting json data..." << endl;
 
 	typedef genie::ResourceUsage<int16_t, int16_t, int16_t> ResourceStorage;
-	typedef genie::ResourceUsage<int16_t, int16_t, int8_t> ResearchResourceCost;
+	typedef genie::ResourceUsage<int16_t, int16_t, unsigned char> ResearchResourceCost;
 
 	std::set<std::uint32_t> used;
 
