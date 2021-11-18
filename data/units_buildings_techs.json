@@ -532,8 +532,8 @@
 			"gold": 40,
 			"stone": 0
 		},
-		"attack":12,
-		"melee_armor":5,
+		"attack":14,
+		"melee_armor":7,
 		"pierce_armor":2,
 		"base_id":25,
 		"help_converter":26112,
@@ -1478,7 +1478,7 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":0,
+		"melee_armor":-2,
 		"pierce_armor":7,
 		"base_id":70,
 		"help_converter":26344,
@@ -1514,7 +1514,7 @@
 	},
 	"72" : {
 		"cost": {
-			"wood": 2,
+			"wood": 3,
 			"food": 0,
 			"gold": 0,
 			"stone": 0
@@ -1625,7 +1625,7 @@
 			"stone": 0
 		},
 		"attack":9,
-		"melee_armor":0,
+		"melee_armor":1,
 		"pierce_armor":1,
 		"base_id":77,
 		"help_converter":26081,
@@ -1781,7 +1781,7 @@
 		"name":"MRKT",
 		"hit_points":1800,
 		"line_of_sight":6,
-		"garrison_capacity":0,
+		"garrison_capacity":10,
 		"type":80,
 		"class":3
 	},
@@ -2453,7 +2453,7 @@
 		"name":"MRKT3",
 		"hit_points":2100,
 		"line_of_sight":6,
-		"garrison_capacity":0,
+		"garrison_capacity":10,
 		"type":80,
 		"class":3
 	},
@@ -2501,7 +2501,7 @@
 	},
 	"119" : {
 		"cost": {
-			"wood": 2,
+			"wood": 3,
 			"food": 0,
 			"gold": 0,
 			"stone": 0
@@ -2894,7 +2894,7 @@
 		"name":"MRKT4",
 		"hit_points":2100,
 		"line_of_sight":6,
-		"garrison_capacity":0,
+		"garrison_capacity":10,
 		"type":80,
 		"class":3
 	},
@@ -4019,7 +4019,7 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":2,
+		"melee_armor":1,
 		"pierce_armor":9,
 		"base_id":191,
 		"help_converter":26344,
@@ -4879,7 +4879,7 @@
 			"gold": 25,
 			"stone": 0
 		},
-		"attack":8,
+		"attack":10,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":232,
@@ -6118,7 +6118,7 @@
 			"gold": 30,
 			"stone": 0
 		},
-		"attack":8,
+		"attack":10,
 		"melee_armor":1,
 		"pierce_armor":1,
 		"base_id":291,
@@ -6126,7 +6126,7 @@
 		"language_file_name":5110,
 		"language_file_help":105110,
 		"name":"SMURI",
-		"hit_points":60,
+		"hit_points":70,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -9584,7 +9584,7 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":1,
+		"melee_armor":-1,
 		"pierce_armor":8,
 		"base_id":463,
 		"help_converter":26344,
@@ -9605,7 +9605,7 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":2,
+		"melee_armor":1,
 		"pierce_armor":9,
 		"base_id":464,
 		"help_converter":26344,
@@ -9773,7 +9773,7 @@
 			"stone": 0
 		},
 		"attack":12,
-		"melee_armor":0,
+		"melee_armor":1,
 		"pierce_armor":1,
 		"base_id":473,
 		"help_converter":26411,
@@ -14371,8 +14371,8 @@
 			"gold": 25,
 			"stone": 0
 		},
-		"attack":9,
-		"melee_armor":0,
+		"attack":12,
+		"melee_armor":1,
 		"pierce_armor":1,
 		"base_id":692,
 		"help_converter":26574,
@@ -15072,7 +15072,7 @@
 		"language_file_name":5667,
 		"language_file_help":105667,
 		"name":"JAGUAR",
-		"hit_points":50,
+		"hit_points":65,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -16282,14 +16282,14 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":10,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":786,
-		"help_converter":26705,
+		"help_converter":26649,
 		"language_file_name":0,
-		"language_file_help":105705,
-		"name":"Projectile STW",
+		"language_file_help":105649,
+		"name":"Projectile Krepost",
 		"hit_points":1,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -16303,14 +16303,14 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":10,
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":787,
-		"help_converter":26706,
+		"help_converter":26650,
 		"language_file_name":0,
-		"language_file_help":105706,
-		"name":"Projectile STW (Fire)",
+		"language_file_help":105650,
+		"name":"Projectile Krepost (Fire)",
 		"hit_points":1,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -18236,14 +18236,14 @@
 			"stone": 0
 		},
 		"attack":7,
-		"melee_armor":0,
+		"melee_armor":1,
 		"pierce_armor":0,
 		"base_id":879,
 		"help_converter":26686,
 		"language_file_name":5686,
 		"language_file_help":105686,
 		"name":"KAMAY",
-		"hit_points":60,
+		"hit_points":70,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -21036,7 +21036,7 @@
 		"language_file_name":5140,
 		"language_file_help":105140,
 		"name":"GBETO",
-		"hit_points":30,
+		"hit_points":35,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":70,
@@ -21099,7 +21099,7 @@
 		"language_file_name":5143,
 		"language_file_help":105143,
 		"name":"SHOTEL",
-		"hit_points":40,
+		"hit_points":45,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -21204,7 +21204,7 @@
 		"language_file_name":5159,
 		"language_file_help":105159,
 		"name":"FEITO",
-		"hit_points":5200,
+		"hit_points":2700,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":80,
@@ -26026,7 +26026,7 @@
 			"gold": 0,
 			"stone": 350
 		},
-		"attack":9,
+		"attack":10,
 		"melee_armor":8,
 		"pierce_armor":11,
 		"base_id":1251,
@@ -36185,7 +36185,7 @@
 	},
 	"1735" : {
 		"cost": {
-			"wood": 0,
+			"wood": 125,
 			"food": 0,
 			"gold": 0,
 			"stone": 0
@@ -40059,7 +40059,7 @@
 	"207" : {
 		"cost": {
 			"wood": 0,
-			"food": 200,
+			"food": 150,
 			"gold": 65,
 			"stone": 0
 		},
@@ -40327,10 +40327,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28106,
-		"language_file_name":7106,
-		"language_file_help":107106,
-		"name":"Shadow Transport"
+		"help_converter":-79000,
+		"language_file_name":0,
+		"language_file_help":0,
+		"name":"New Research"
 	},
 	"230" : {
 		"cost": {
@@ -41943,8 +41943,8 @@
 	"364" : {
 		"cost": {
 			"wood": 0,
-			"food": 1200,
-			"gold": 600,
+			"food": 950,
+			"gold": 500,
 			"stone": 0
 		},
 		"help_converter":28391,
@@ -41967,8 +41967,8 @@
 	"366" : {
 		"cost": {
 			"wood": 0,
-			"food": 950,
-			"gold": 875,
+			"food": 750,
+			"gold": 650,
 			"stone": 0
 		},
 		"help_converter":28387,
@@ -42274,7 +42274,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +20%HP"
+		"name":"C-Bonus, Inf +20% HP"
 	},
 	"392" : {
 		"cost": {
@@ -42351,8 +42351,8 @@
 	"398" : {
 		"cost": {
 			"wood": 0,
-			"food": 1300,
-			"gold": 550,
+			"food": 1075,
+			"gold": 475,
 			"stone": 0
 		},
 		"help_converter":28401,
@@ -42562,7 +42562,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +15%HP"
+		"name":"C-Bonus, Inf +15% HP"
 	},
 	"416" : {
 		"cost": {
@@ -42574,7 +42574,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +10%HP"
+		"name":"C-Bonus, Inf +20% HP"
 	},
 	"417" : {
 		"cost": {
@@ -44403,8 +44403,8 @@
 	"569" : {
 		"cost": {
 			"wood": 0,
-			"food": 1200,
-			"gold": 550,
+			"food": 900,
+			"gold": 450,
 			"stone": 0
 		},
 		"help_converter":28245,
@@ -46167,8 +46167,8 @@
 	"716" : {
 		"cost": {
 			"wood": 0,
-			"food": 150,
-			"gold": 100,
+			"food": 75,
+			"gold": 75,
 			"stone": 0
 		},
 		"help_converter":28403,
