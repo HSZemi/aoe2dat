@@ -925,7 +925,6 @@ void research2json(std::ofstream& out, genie::Tech tech) {
 			<< std::endl;
 	out << "\"HotKey\":" << tech.HotKey << "," << std::endl;
 	out << "\"Name\":\"" << tech.Name << "\"," << std::endl;
-	out << "\"Name2\":\"" << tech.Name2 << "\"," << std::endl;
 	out << "\"Repeatable\":\"" << std::to_string(tech.Repeatable) << "\"" << std::endl;
 	out << "}";
 }
