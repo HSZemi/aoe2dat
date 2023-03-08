@@ -36387,7 +36387,7 @@
 		"language_file_name":5428,
 		"language_file_help":105428,
 		"name":"ARELE",
-		"hit_points":200,
+		"hit_points":180,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -36429,7 +36429,7 @@
 		"language_file_name":5430,
 		"language_file_help":105430,
 		"name":"EARELE",
-		"hit_points":250,
+		"hit_points":220,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -43534,7 +43534,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Villager cost -10%"
+		"name":"C-Bonus, Villager cost -5%"
 	},
 	"497" : {
 		"cost": {
@@ -43546,7 +43546,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Villager cost -15%"
+		"name":"C-Bonus, Villager cost -10%"
 	},
 	"498" : {
 		"cost": {
@@ -43558,7 +43558,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Villager cost -20%"
+		"name":"C-Bonus, Villager cost -15%"
 	},
 	"499" : {
 		"cost": {
@@ -44218,7 +44218,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Villager cost -25%"
+		"name":"C-Bonus, Villager cost -20%"
 	},
 	"554" : {
 		"cost": {
@@ -47019,8 +47019,8 @@
 	"787" : {
 		"cost": {
 			"wood": 0,
-			"food": 950,
-			"gold": 750,
+			"food": 1100,
+			"gold": 800,
 			"stone": 0
 		},
 		"help_converter":28353,
