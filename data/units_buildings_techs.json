@@ -529,7 +529,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 85,
-			"gold": 40,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":14,
@@ -3888,7 +3888,7 @@
 	"185" : {
 		"cost": {
 			"wood": 0,
-			"food": 30,
+			"food": 40,
 			"gold": 40,
 			"stone": 0
 		},
@@ -4879,7 +4879,7 @@
 			"gold": 25,
 			"stone": 0
 		},
-		"attack":10,
+		"attack":11,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":232,
@@ -4887,7 +4887,7 @@
 		"language_file_name":5113,
 		"language_file_help":105113,
 		"name":"WBRSK",
-		"hit_points":65,
+		"hit_points":70,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -6114,7 +6114,7 @@
 	"291" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 30,
 			"stone": 0
 		},
@@ -8680,7 +8680,7 @@
 			"gold": 150,
 			"stone": 0
 		},
-		"attack":35,
+		"attack":50,
 		"melee_armor":0,
 		"pierce_armor":6,
 		"base_id":420,
@@ -11053,7 +11053,7 @@
 			"gold": 25,
 			"stone": 0
 		},
-		"attack":13,
+		"attack":14,
 		"melee_armor":0,
 		"pierce_armor":1,
 		"base_id":534,
@@ -11061,7 +11061,7 @@
 		"language_file_name":5463,
 		"language_file_help":105463,
 		"name":"UWBRS",
-		"hit_points":80,
+		"hit_points":85,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -11120,10 +11120,10 @@
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":537,
-		"help_converter":26434,
+		"help_converter":26315,
 		"language_file_name":0,
-		"language_file_help":105434,
-		"name":"Projectile FRG",
+		"language_file_help":105315,
+		"name":"Projectile BTW (Fire)",
 		"hit_points":1,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -11141,10 +11141,10 @@
 		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":538,
-		"help_converter":26435,
+		"help_converter":26315,
 		"language_file_name":0,
-		"language_file_help":105435,
-		"name":"Projectile HFG",
+		"language_file_help":105315,
+		"name":"Projectile Slinger (Fire)",
 		"hit_points":1,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -11470,7 +11470,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 85,
-			"gold": 40,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":17,
@@ -11595,7 +11595,7 @@
 	"560" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 30,
 			"stone": 0
 		},
@@ -13595,7 +13595,7 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":1000,
+		"melee_armor":10000,
 		"pierce_armor":0,
 		"base_id":655,
 		"help_converter":26552,
@@ -14350,7 +14350,7 @@
 			"gold": 150,
 			"stone": 0
 		},
-		"attack":45,
+		"attack":60,
 		"melee_armor":0,
 		"pierce_armor":8,
 		"base_id":691,
@@ -15066,7 +15066,7 @@
 		},
 		"attack":10,
 		"melee_armor":1,
-		"pierce_armor":1,
+		"pierce_armor":2,
 		"base_id":725,
 		"help_converter":26667,
 		"language_file_name":5667,
@@ -15087,7 +15087,7 @@
 		},
 		"attack":12,
 		"melee_armor":2,
-		"pierce_armor":1,
+		"pierce_armor":2,
 		"base_id":726,
 		"help_converter":26669,
 		"language_file_name":5669,
@@ -15585,7 +15585,7 @@
 	"751" : {
 		"cost": {
 			"wood": 0,
-			"food": 20,
+			"food": 25,
 			"gold": 50,
 			"stone": 0
 		},
@@ -15606,7 +15606,7 @@
 	"752" : {
 		"cost": {
 			"wood": 0,
-			"food": 20,
+			"food": 25,
 			"gold": 50,
 			"stone": 0
 		},
@@ -15627,7 +15627,7 @@
 	"753" : {
 		"cost": {
 			"wood": 0,
-			"food": 20,
+			"food": 25,
 			"gold": 50,
 			"stone": 0
 		},
@@ -15969,7 +15969,7 @@
 		},
 		"attack":16,
 		"melee_armor":2,
-		"pierce_armor":2,
+		"pierce_armor":1,
 		"base_id":771,
 		"help_converter":26687,
 		"language_file_name":5687,
@@ -17123,7 +17123,7 @@
 			"stone": 1000
 		},
 		"attack":0,
-		"melee_armor":1000,
+		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":826,
 		"help_converter":26726,
@@ -17257,7 +17257,7 @@
 		"language_file_help":105732,
 		"name":"UTURT",
 		"hit_points":300,
-		"line_of_sight":8,
+		"line_of_sight":9,
 		"garrison_capacity":0,
 		"type":70,
 		"class":22
@@ -18168,8 +18168,8 @@
 	"876" : {
 		"cost": {
 			"wood": 0,
-			"food": 50,
-			"gold": 80,
+			"food": 60,
+			"gold": 70,
 			"stone": 0
 		},
 		"attack":12,
@@ -18210,8 +18210,8 @@
 	"878" : {
 		"cost": {
 			"wood": 0,
-			"food": 50,
-			"gold": 80,
+			"food": 60,
+			"gold": 70,
 			"stone": 0
 		},
 		"attack":14,
@@ -18231,7 +18231,7 @@
 	"879" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 65,
 			"gold": 30,
 			"stone": 0
 		},
@@ -18273,7 +18273,7 @@
 	"881" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 65,
 			"gold": 30,
 			"stone": 0
 		},
@@ -18426,12 +18426,12 @@
 		},
 		"attack":0,
 		"melee_armor":0,
-		"pierce_armor":7,
+		"pierce_armor":0,
 		"base_id":888,
-		"help_converter":26464,
+		"help_converter":26000,
 		"language_file_name":0,
-		"language_file_help":105464,
-		"name":"Llama building",
+		"language_file_help":105000,
+		"name":"Lithuanian food building",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0,
@@ -20776,7 +20776,7 @@
 			"gold": 70,
 			"stone": 0
 		},
-		"attack":16,
+		"attack":7,
 		"melee_armor":2,
 		"pierce_armor":4,
 		"base_id":1001,
@@ -20818,7 +20818,7 @@
 			"gold": 70,
 			"stone": 0
 		},
-		"attack":20,
+		"attack":9,
 		"melee_armor":2,
 		"pierce_armor":6,
 		"base_id":1003,
@@ -21036,7 +21036,7 @@
 		"language_file_name":5140,
 		"language_file_help":105140,
 		"name":"GBETO",
-		"hit_points":35,
+		"hit_points":40,
 		"line_of_sight":6,
 		"garrison_capacity":0,
 		"type":70,
@@ -21078,7 +21078,7 @@
 		"language_file_name":5141,
 		"language_file_help":105141,
 		"name":"EGBETO",
-		"hit_points":45,
+		"hit_points":50,
 		"line_of_sight":7,
 		"garrison_capacity":0,
 		"type":70,
@@ -28569,7 +28569,7 @@
 		},
 		"attack":11,
 		"melee_armor":0,
-		"pierce_armor":1,
+		"pierce_armor":2,
 		"base_id":1372,
 		"help_converter":26010,
 		"language_file_name":5010,
@@ -34581,7 +34581,7 @@
 		"language_file_name":5538,
 		"language_file_help":105538,
 		"name":"SERJEANT",
-		"hit_points":45,
+		"hit_points":50,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -34623,7 +34623,7 @@
 		"language_file_name":5538,
 		"language_file_help":105538,
 		"name":"DSERJEANT",
-		"hit_points":45,
+		"hit_points":50,
 		"line_of_sight":3,
 		"garrison_capacity":0,
 		"type":70,
@@ -34678,15 +34678,15 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":12,
+		"attack":11,
 		"melee_armor":1,
-		"pierce_armor":1,
+		"pierce_armor":0,
 		"base_id":1663,
 		"help_converter":26542,
 		"language_file_name":21061,
 		"language_file_help":105542,
 		"name":"FLEMISHPIKEMAN",
-		"hit_points":75,
+		"hit_points":60,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -35392,15 +35392,15 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":12,
+		"attack":11,
 		"melee_armor":1,
-		"pierce_armor":1,
+		"pierce_armor":0,
 		"base_id":1697,
 		"help_converter":26542,
 		"language_file_name":21062,
 		"language_file_help":105542,
 		"name":"FLEMISHPIKEMANF",
-		"hit_points":75,
+		"hit_points":60,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -35430,19 +35430,19 @@
 	"1699" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
-			"gold": 25,
+			"food": 50,
+			"gold": 15,
 			"stone": 0
 		},
-		"attack":12,
+		"attack":11,
 		"melee_armor":1,
-		"pierce_armor":1,
+		"pierce_armor":0,
 		"base_id":1699,
 		"help_converter":26542,
 		"language_file_name":5542,
 		"language_file_help":105542,
 		"name":"FLEMISHPIKEMAN2",
-		"hit_points":75,
+		"hit_points":60,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -36523,7 +36523,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 20,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":8,
@@ -36565,7 +36565,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 70,
-			"gold": 20,
+			"gold": 30,
 			"stone": 0
 		},
 		"attack":11,
@@ -37256,66 +37256,66 @@
 	},
 	"1786" : {
 		"cost": {
-			"wood": 0,
-			"food": 0,
+			"wood": 25,
+			"food": 35,
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":3,
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1786,
-		"help_converter":26000,
-		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26078,
+		"language_file_name":5078,
+		"language_file_help":105078,
+		"name":"DPKEMN",
+		"hit_points":45,
+		"line_of_sight":4,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":70,
+		"class":6
 	},
 	"1787" : {
 		"cost": {
-			"wood": 0,
-			"food": 0,
+			"wood": 25,
+			"food": 35,
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":4,
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1787,
-		"help_converter":26000,
-		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26408,
+		"language_file_name":5408,
+		"language_file_help":105408,
+		"name":"DISPKM",
+		"hit_points":55,
+		"line_of_sight":4,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":70,
+		"class":6
 	},
 	"1788" : {
 		"cost": {
-			"wood": 0,
-			"food": 0,
+			"wood": 25,
+			"food": 35,
 			"gold": 0,
 			"stone": 0
 		},
-		"attack":0,
+		"attack":6,
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1788,
-		"help_converter":26000,
-		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"help_converter":26409,
+		"language_file_name":5409,
+		"language_file_help":105409,
+		"name":"DHLBDM",
+		"hit_points":60,
+		"line_of_sight":4,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":70,
+		"class":6
 	},
 	"1789" : {
 		"cost": {
@@ -37325,18 +37325,18 @@
 			"stone": 0
 		},
 		"attack":0,
-		"melee_armor":0,
+		"melee_armor":1000,
 		"pierce_armor":0,
 		"base_id":1789,
-		"help_converter":26000,
+		"help_converter":26525,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
+		"language_file_help":105525,
+		"name":"Projectile Organ Gun (Secondary)",
 		"hit_points":1,
-		"line_of_sight":2,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
-		"type":10,
-		"class":-1
+		"type":60,
+		"class":11
 	},
 	"1790" : {
 		"cost": {
@@ -37683,8 +37683,8 @@
 	"9" : {
 		"cost": {
 			"wood": 0,
-			"food": 500,
-			"gold": 450,
+			"food": 400,
+			"gold": 400,
 			"stone": 0
 		},
 		"help_converter":28424,
@@ -37694,9 +37694,9 @@
 	},
 	"10" : {
 		"cost": {
-			"wood": 450,
-			"food": 0,
-			"gold": 500,
+			"wood": 0,
+			"food": 600,
+			"gold": 650,
 			"stone": 0
 		},
 		"help_converter":28425,
@@ -37826,9 +37826,9 @@
 	},
 	"21" : {
 		"cost": {
-			"wood": 0,
+			"wood": 300,
 			"food": 500,
-			"gold": 500,
+			"gold": 0,
 			"stone": 0
 		},
 		"help_converter":28428,
@@ -38163,14 +38163,14 @@
 	"49" : {
 		"cost": {
 			"wood": 0,
-			"food": 850,
-			"gold": 400,
+			"food": 650,
+			"gold": 500,
 			"stone": 0
 		},
 		"help_converter":28431,
 		"language_file_name":7431,
 		"language_file_help":107431,
-		"name":"Viking Berserkergang"
+		"name":"Bogsveigar"
 	},
 	"50" : {
 		"cost": {
@@ -38282,9 +38282,9 @@
 	},
 	"59" : {
 		"cost": {
-			"wood": 750,
+			"wood": 550,
 			"food": 0,
-			"gold": 400,
+			"gold": 300,
 			"stone": 0
 		},
 		"help_converter":28059,
@@ -39403,10 +39403,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Military cost -15%"
 	},
 	"153" : {
 		"cost": {
@@ -39415,10 +39415,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Military cost -20%"
 	},
 	"154" : {
 		"cost": {
@@ -39427,10 +39427,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Military cost -25%"
 	},
 	"155" : {
 		"cost": {
@@ -39439,10 +39439,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Military cost -30%"
 	},
 	"156" : {
 		"cost": {
@@ -39454,7 +39454,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Lance Cav (make avail)"
+		"name":"C-Bonus, TC Wood cost"
 	},
 	"157" : {
 		"cost": {
@@ -39478,7 +39478,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Pikeman (make avail)"
+		"name":"C-Bonus, TC Stone cost"
 	},
 	"159" : {
 		"cost": {
@@ -39487,10 +39487,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, TC constr time"
 	},
 	"160" : {
 		"cost": {
@@ -39811,10 +39811,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28160,
-		"language_file_name":7160,
-		"language_file_help":107160,
-		"name":"2H Swordsmn (make avail)"
+		"help_converter":28288,
+		"language_file_name":7000,
+		"language_file_help":107288,
+		"name":"C-Bonus, Tech reward"
 	},
 	"187" : {
 		"cost": {
@@ -39939,7 +39939,7 @@
 	"197" : {
 		"cost": {
 			"wood": 0,
-			"food": 215,
+			"food": 160,
 			"gold": 90,
 			"stone": 0
 		},
@@ -40442,8 +40442,8 @@
 	},
 	"239" : {
 		"cost": {
-			"wood": 1100,
-			"food": 1000,
+			"wood": 900,
+			"food": 800,
 			"gold": 0,
 			"stone": 0
 		},
@@ -40711,10 +40711,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28257,
-		"language_file_name":7000,
-		"language_file_help":107257,
-		"name":"Transport (make avail)"
+		"help_converter":-79000,
+		"language_file_name":0,
+		"language_file_help":0,
+		"name":"New Research"
 	},
 	"262" : {
 		"cost": {
@@ -40990,7 +40990,7 @@
 		"help_converter":28304,
 		"language_file_name":7000,
 		"language_file_help":107304,
-		"name":"C-Bonus, Unit Cost 1"
+		"name":"C-Bonus, Skirms Pikes cost -25%"
 	},
 	"285" : {
 		"cost": {
@@ -41023,10 +41023,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28292,
+		"help_converter":-79000,
 		"language_file_name":0,
-		"language_file_help":107292,
-		"name":"C-Bonus, Free Farming 1"
+		"language_file_help":0,
+		"name":"New Research"
 	},
 	"288" : {
 		"cost": {
@@ -41035,10 +41035,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28293,
-		"language_file_name":7000,
-		"language_file_help":107293,
-		"name":"C-Bonus, Free Farming 2"
+		"help_converter":-79000,
+		"language_file_name":0,
+		"language_file_help":0,
+		"name":"New Research"
 	},
 	"289" : {
 		"cost": {
@@ -41047,10 +41047,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28294,
-		"language_file_name":7000,
-		"language_file_help":107294,
-		"name":"C-Bonus, Free Farming 3"
+		"help_converter":-79000,
+		"language_file_name":0,
+		"language_file_help":0,
+		"name":"New Research"
 	},
 	"290" : {
 		"cost": {
@@ -41071,10 +41071,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28258,
+		"language_file_name":7000,
+		"language_file_help":107258,
+		"name":"Donjon built"
 	},
 	"292" : {
 		"cost": {
@@ -41426,9 +41426,9 @@
 	},
 	"321" : {
 		"cost": {
-			"wood": 0,
+			"wood": 200,
 			"food": 400,
-			"gold": 200,
+			"gold": 0,
 			"stone": 0
 		},
 		"help_converter":28322,
@@ -41455,10 +41455,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28288,
+		"language_file_name":7000,
+		"language_file_help":107288,
+		"name":"Exclude Age2 from tech reward"
 	},
 	"324" : {
 		"cost": {
@@ -41467,10 +41467,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28288,
+		"language_file_name":7000,
+		"language_file_help":107288,
+		"name":"Exclude Age3 from tech reward"
 	},
 	"325" : {
 		"cost": {
@@ -41491,10 +41491,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28288,
+		"language_file_name":7000,
+		"language_file_help":107288,
+		"name":"Exclude Age4 from tech reward"
 	},
 	"327" : {
 		"cost": {
@@ -42406,7 +42406,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +3 vs Wild Boar"
+		"name":"C-Bonus, Hunting bonuses"
 	},
 	"403" : {
 		"cost": {
@@ -43131,8 +43131,8 @@
 	"463" : {
 		"cost": {
 			"wood": 0,
-			"food": 700,
-			"gold": 500,
+			"food": 600,
+			"gold": 450,
 			"stone": 0
 		},
 		"help_converter":28312,
@@ -43347,8 +43347,8 @@
 	"481" : {
 		"cost": {
 			"wood": 0,
-			"food": 1000,
-			"gold": 800,
+			"food": 900,
+			"gold": 500,
 			"stone": 0
 		},
 		"help_converter":28397,
@@ -43731,7 +43731,7 @@
 	"513" : {
 		"cost": {
 			"wood": 0,
-			"food": 1200,
+			"food": 900,
 			"gold": 500,
 			"stone": 0
 		},
@@ -43810,7 +43810,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, -20% Stone cost "
+		"name":"C-Bonus, Building Stone cost"
 	},
 	"520" : {
 		"cost": {
@@ -44590,7 +44590,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Villagers +10% faster"
+		"name":"C-Bonus, Villagers 5% faster"
 	},
 	"585" : {
 		"cost": {
@@ -44710,7 +44710,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Long lasting gold mines"
+		"name":"C-Bonus, Gold productivity"
 	},
 	"595" : {
 		"cost": {
@@ -44739,8 +44739,8 @@
 	"597" : {
 		"cost": {
 			"wood": 0,
-			"food": 750,
-			"gold": 475,
+			"food": 700,
+			"gold": 525,
 			"stone": 0
 		},
 		"help_converter":28240,
@@ -44782,7 +44782,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"C-Bonus, Villagers 10% faster"
 	},
 	"601" : {
 		"cost": {
@@ -45003,8 +45003,8 @@
 	"619" : {
 		"cost": {
 			"wood": 0,
-			"food": 1100,
-			"gold": 675,
+			"food": 1000,
+			"gold": 750,
 			"stone": 0
 		},
 		"help_converter":28289,
@@ -45122,9 +45122,9 @@
 	},
 	"629" : {
 		"cost": {
-			"wood": 600,
-			"food": 0,
-			"gold": 350,
+			"wood": 200,
+			"food": 550,
+			"gold": 0,
 			"stone": 0
 		},
 		"help_converter":28298,
@@ -45586,7 +45586,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"Shadow Node Barracks + Khmer"
+		"name":"Shadow Node Barracks/Donjon + Khmer"
 	},
 	"668" : {
 		"cost": {
@@ -45946,7 +45946,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, +150 food"
+		"name":"C-Bonus, +100 food per TC"
 	},
 	"698" : {
 		"cost": {
@@ -46174,7 +46174,7 @@
 		"help_converter":28403,
 		"language_file_name":7403,
 		"language_file_help":107403,
-		"name":"Tracking"
+		"name":"Supplies"
 	},
 	"717" : {
 		"cost": {
@@ -46335,14 +46335,14 @@
 	"730" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
+			"food": 1,
 			"gold": 0,
 			"stone": 0
 		},
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Start w/ Llama"
+		"name":"T-Bonus, Start w/ Llama"
 	},
 	"731" : {
 		"cost": {
@@ -46611,8 +46611,8 @@
 	"753" : {
 		"cost": {
 			"wood": 0,
-			"food": 1100,
-			"gold": 800,
+			"food": 800,
+			"gold": 675,
 			"stone": 0
 		},
 		"help_converter":28341,
@@ -46635,8 +46635,8 @@
 	"755" : {
 		"cost": {
 			"wood": 0,
-			"food": 1200,
-			"gold": 650,
+			"food": 200,
+			"gold": 150,
 			"stone": 0
 		},
 		"help_converter":28343,
@@ -46647,8 +46647,8 @@
 	"756" : {
 		"cost": {
 			"wood": 0,
-			"food": 300,
-			"gold": 600,
+			"food": 400,
+			"gold": 300,
 			"stone": 0
 		},
 		"help_converter":28344,
@@ -46995,7 +46995,7 @@
 	"785" : {
 		"cost": {
 			"wood": 0,
-			"food": 800,
+			"food": 500,
 			"gold": 450,
 			"stone": 0
 		},
@@ -47547,8 +47547,8 @@
 	"831" : {
 		"cost": {
 			"wood": 0,
-			"food": 350,
-			"gold": 250,
+			"food": 300,
+			"gold": 200,
 			"stone": 0
 		},
 		"help_converter":28357,
@@ -47595,8 +47595,8 @@
 	"835" : {
 		"cost": {
 			"wood": 0,
-			"food": 200,
-			"gold": 400,
+			"food": 500,
+			"gold": 450,
 			"stone": 0
 		},
 		"help_converter":28361,
@@ -47631,7 +47631,7 @@
 	"838" : {
 		"cost": {
 			"wood": 0,
-			"food": 650,
+			"food": 850,
 			"gold": 0,
 			"stone": 0
 		},
@@ -48075,14 +48075,14 @@
 	"875" : {
 		"cost": {
 			"wood": 0,
-			"food": 0,
-			"gold": 0,
+			"food": 100,
+			"gold": 100,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":"RESERVED"
+		"help_converter":28450,
+		"language_file_name":7450,
+		"language_file_help":107450,
+		"name":"Gambesons"
 	},
 	"876" : {
 		"cost": {
@@ -48094,7 +48094,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"C-Bonus, Siege wood discount"
 	},
 	"877" : {
 		"cost": {
@@ -48106,7 +48106,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"RESERVED"
+		"name":"C-Bonus, Cavalry vs Skirm"
 	},
 	"878" : {
 		"cost": {
