@@ -751,6 +751,12 @@ void creatable2json(std::ofstream& out, genie::unit::Creatable creatable) {
 	out << "\"ChargeEvent\":" << creatable.ChargeEvent
             << "," << std::endl;
 	out << "\"ChargeType\":" << creatable.ChargeType
+            << "," << std::endl;
+	out << "\"MinConversionTimeMod\":" << creatable.MinConversionTimeMod
+            << "," << std::endl;
+	out << "\"MaxConversionTimeMod\":" << creatable.MaxConversionTimeMod
+            << "," << std::endl;
+	out << "\"ConversionChanceMod\":" << creatable.ConversionChanceMod
             << std::endl;
 	out << "}";
 }
@@ -861,6 +867,8 @@ void type502json(std::ofstream& out, genie::unit::Type50 type50) {
 			<< join2string<float>(type50.GraphicDisplacement) << "],"
 			<< std::endl;
 	out << "\"BlastAttackLevel\":" << std::to_string(type50.BlastAttackLevel)
+			<< "," << std::endl;
+	out << "\"BlastDamage\":" << std::to_string(type50.BlastDamage)
 			<< "," << std::endl;
 	out << "\"MinRange\":" << type50.MinRange << "," << std::endl;
 	out << "\"AccuracyDispersion\":" << type50.AccuracyDispersion << ","
