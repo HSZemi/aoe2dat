@@ -1590,7 +1590,7 @@
 		"language_file_name":305186,
 		"language_file_help":105080,
 		"name":"Broad Swordsman",
-		"hit_points":70,
+		"hit_points":80,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -1632,7 +1632,7 @@
 		"language_file_name":305187,
 		"language_file_help":105081,
 		"name":"Long Swordsman",
-		"hit_points":80,
+		"hit_points":100,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -9780,7 +9780,7 @@
 		"language_file_name":305340,
 		"language_file_help":105411,
 		"name":"Legionary",
-		"hit_points":160,
+		"hit_points":140,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -11221,7 +11221,7 @@
 			"gold": 80,
 			"stone": 0
 		},
-		"attack":40,
+		"attack":45,
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":542,
@@ -11796,7 +11796,7 @@
 		"language_file_name":305341,
 		"language_file_help":105471,
 		"name":"Cataphract",
-		"hit_points":220,
+		"hit_points":240,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -18106,7 +18106,7 @@
 		"cost": {
 			"wood": 0,
 			"food": 180,
-			"gold": 45,
+			"gold": 60,
 			"stone": 0
 		},
 		"attack":6,
@@ -38151,7 +38151,7 @@
 	"27" : {
 		"cost": {
 			"wood": 1000,
-			"food": 1500,
+			"food": 1200,
 			"gold": 0,
 			"stone": 0
 		},
@@ -38619,8 +38619,8 @@
 	"66" : {
 		"cost": {
 			"wood": 0,
-			"food": 160,
-			"gold": 50,
+			"food": 240,
+			"gold": 100,
 			"stone": 0
 		},
 		"help_converter":28057,
