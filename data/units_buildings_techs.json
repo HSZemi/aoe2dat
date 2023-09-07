@@ -5035,7 +5035,7 @@
 		"language_file_help":105109,
 		"name":"MPCAV",
 		"hit_points":450,
-		"line_of_sight":4,
+		"line_of_sight":7,
 		"garrison_capacity":0,
 		"type":70,
 		"class":12
@@ -11566,7 +11566,7 @@
 		"language_file_help":105459,
 		"name":"UMPCAV",
 		"hit_points":600,
-		"line_of_sight":5,
+		"line_of_sight":8,
 		"garrison_capacity":0,
 		"type":70,
 		"class":12
@@ -23261,7 +23261,7 @@
 		"help_converter":26525,
 		"language_file_name":0,
 		"language_file_help":105525,
-		"name":"Projectile Gunpowder (Secondary)",
+		"name":"Projectile Hussite Wagon (Secondary)",
 		"hit_points":1,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -34569,7 +34569,7 @@
 	"1658" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 35,
 			"stone": 0
 		},
@@ -34590,7 +34590,7 @@
 	"1659" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 35,
 			"stone": 0
 		},
@@ -34611,7 +34611,7 @@
 	"1660" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 35,
 			"stone": 0
 		},
@@ -34632,7 +34632,7 @@
 	"1661" : {
 		"cost": {
 			"wood": 0,
-			"food": 60,
+			"food": 50,
 			"gold": 35,
 			"stone": 0
 		},
@@ -35539,7 +35539,7 @@
 			"gold": 70,
 			"stone": 0
 		},
-		"attack":17,
+		"attack":11,
 		"melee_armor":0,
 		"pierce_armor":7,
 		"base_id":1704,
@@ -35547,7 +35547,7 @@
 		"language_file_name":5561,
 		"language_file_help":105561,
 		"name":"HUSSITEWAGON",
-		"hit_points":200,
+		"hit_points":180,
 		"line_of_sight":8,
 		"garrison_capacity":0,
 		"type":70,
@@ -35581,7 +35581,7 @@
 			"gold": 70,
 			"stone": 0
 		},
-		"attack":20,
+		"attack":13,
 		"melee_armor":1,
 		"pierce_armor":10,
 		"base_id":1706,
@@ -35589,7 +35589,7 @@
 		"language_file_name":5563,
 		"language_file_help":105563,
 		"name":"EHUSSITEWAGON",
-		"hit_points":250,
+		"hit_points":230,
 		"line_of_sight":8,
 		"garrison_capacity":0,
 		"type":70,
@@ -36375,7 +36375,7 @@
 	"1744" : {
 		"cost": {
 			"wood": 0,
-			"food": 130,
+			"food": 120,
 			"gold": 95,
 			"stone": 0
 		},
@@ -36417,7 +36417,7 @@
 	"1746" : {
 		"cost": {
 			"wood": 0,
-			"food": 130,
+			"food": 120,
 			"gold": 95,
 			"stone": 0
 		},
@@ -37353,7 +37353,7 @@
 		"language_file_name":5052,
 		"language_file_help":105052,
 		"name":"CENTURION",
-		"hit_points":120,
+		"hit_points":110,
 		"line_of_sight":4,
 		"garrison_capacity":0,
 		"type":70,
@@ -41482,7 +41482,7 @@
 		"help_converter":28335,
 		"language_file_name":0,
 		"language_file_help":107335,
-		"name":"C-Bonus, Castle 1/2 Cost"
+		"name":"C-Bonus, Castle 15% cheaper"
 	},
 	"326" : {
 		"cost": {
@@ -41539,10 +41539,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
+		"help_converter":28335,
 		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"language_file_help":107335,
+		"name":"C-Bonus, Castle 25% cheaper"
 	},
 	"331" : {
 		"cost": {
