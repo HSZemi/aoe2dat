@@ -5558,7 +5558,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF01",
+		"name":"Cliff (Default) 01",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5579,7 +5579,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF02",
+		"name":"Cliff (Default) 02",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5600,7 +5600,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF03",
+		"name":"Cliff (Default) 03",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5621,7 +5621,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF04",
+		"name":"Cliff (Default) 04",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5642,7 +5642,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF05",
+		"name":"Cliff (Default) 05",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5663,7 +5663,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF06",
+		"name":"Cliff (Default) 06",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5684,7 +5684,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF07",
+		"name":"Cliff (Default) 07",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5705,7 +5705,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF08",
+		"name":"Cliff (Default) 08",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5726,7 +5726,7 @@
 		"help_converter":26249,
 		"language_file_name":0,
 		"language_file_help":105249,
-		"name":"CLF09",
+		"name":"Cliff (Default) 09",
 		"hit_points":10000,
 		"line_of_sight":-1,
 		"garrison_capacity":0,
@@ -5937,7 +5937,7 @@
 		"language_file_name":5103,
 		"language_file_help":105103,
 		"name":"DERVI",
-		"hit_points":65,
+		"hit_points":80,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -11523,7 +11523,7 @@
 		"language_file_name":5453,
 		"language_file_help":105453,
 		"name":"UDERV",
-		"hit_points":80,
+		"hit_points":90,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -14796,9 +14796,9 @@
 		"pierce_armor":0,
 		"base_id":712,
 		"help_converter":26594,
-		"language_file_name":5594,
+		"language_file_name":21111,
 		"language_file_help":105594,
-		"name":"YERTA",
+		"name":"Yurt A",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14817,9 +14817,9 @@
 		"pierce_armor":0,
 		"base_id":713,
 		"help_converter":26595,
-		"language_file_name":5595,
+		"language_file_name":21112,
 		"language_file_help":105595,
-		"name":"YERTB",
+		"name":"Yurt B",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14838,9 +14838,9 @@
 		"pierce_armor":0,
 		"base_id":714,
 		"help_converter":26596,
-		"language_file_name":5596,
+		"language_file_name":21113,
 		"language_file_help":105596,
-		"name":"YERTC",
+		"name":"Yurt C",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14859,9 +14859,9 @@
 		"pierce_armor":0,
 		"base_id":715,
 		"help_converter":26597,
-		"language_file_name":5597,
+		"language_file_name":21114,
 		"language_file_help":105597,
-		"name":"YERTD",
+		"name":"Yurt D",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14880,9 +14880,9 @@
 		"pierce_armor":0,
 		"base_id":716,
 		"help_converter":26598,
-		"language_file_name":5598,
+		"language_file_name":21115,
 		"language_file_help":105598,
-		"name":"YERTE",
+		"name":"Yurt E",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14901,9 +14901,9 @@
 		"pierce_armor":0,
 		"base_id":717,
 		"help_converter":26599,
-		"language_file_name":5599,
+		"language_file_name":21116,
 		"language_file_help":105599,
-		"name":"YERTF",
+		"name":"Yurt F",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14922,9 +14922,9 @@
 		"pierce_armor":0,
 		"base_id":718,
 		"help_converter":26600,
-		"language_file_name":5600,
+		"language_file_name":21117,
 		"language_file_help":105600,
-		"name":"YERTG",
+		"name":"Yurt G",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -14943,9 +14943,9 @@
 		"pierce_armor":0,
 		"base_id":719,
 		"help_converter":26601,
-		"language_file_name":5601,
+		"language_file_name":21118,
 		"language_file_help":105601,
-		"name":"YERTH",
+		"name":"Yurt H",
 		"hit_points":500,
 		"line_of_sight":6,
 		"garrison_capacity":0,
@@ -18021,8 +18021,8 @@
 	"869" : {
 		"cost": {
 			"wood": 0,
-			"food": 80,
-			"gold": 10,
+			"food": 35,
+			"gold": 45,
 			"stone": 0
 		},
 		"attack":9,
@@ -18033,7 +18033,7 @@
 		"language_file_name":5728,
 		"language_file_help":105728,
 		"name":"UMAGYX",
-		"hit_points":70,
+		"hit_points":75,
 		"line_of_sight":5,
 		"garrison_capacity":0,
 		"type":70,
@@ -18063,8 +18063,8 @@
 	"871" : {
 		"cost": {
 			"wood": 0,
-			"food": 80,
-			"gold": 10,
+			"food": 35,
+			"gold": 45,
 			"stone": 0
 		},
 		"attack":10,
@@ -23240,7 +23240,7 @@
 		"help_converter":26000,
 		"language_file_name":0,
 		"language_file_help":105000,
-		"name":"Empty building",
+		"name":"Relic building",
 		"hit_points":-1,
 		"line_of_sight":0,
 		"garrison_capacity":0,
@@ -31910,15 +31910,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1531,
-		"help_converter":26000,
+		"help_converter":26003,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105003,
+		"name":"FortifiedChurch Age3 (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1532" : {
 		"cost": {
@@ -31931,15 +31931,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1532,
-		"help_converter":26000,
+		"help_converter":26003,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105003,
+		"name":"Yurt I (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1533" : {
 		"cost": {
@@ -31952,15 +31952,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1533,
-		"help_converter":26000,
+		"help_converter":26003,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105003,
+		"name":"Yurt J (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1534" : {
 		"cost": {
@@ -31973,15 +31973,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1534,
-		"help_converter":26000,
+		"help_converter":26003,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105003,
+		"name":"Yurt K (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1535" : {
 		"cost": {
@@ -31994,15 +31994,15 @@
 		"melee_armor":0,
 		"pierce_armor":0,
 		"base_id":1535,
-		"help_converter":26000,
+		"help_converter":26003,
 		"language_file_name":0,
-		"language_file_help":105000,
-		"name":"",
-		"hit_points":1,
-		"line_of_sight":2,
+		"language_file_help":105003,
+		"name":"Yurt L (Rubble)",
+		"hit_points":0,
+		"line_of_sight":-1,
 		"garrison_capacity":0,
 		"type":10,
-		"class":-1
+		"class":14
 	},
 	"1536" : {
 		"cost": {
@@ -37550,6 +37550,27 @@
 	},
 	"1800" : {
 		"cost": {
+			"wood": 35,
+			"food": 0,
+			"gold": 45,
+			"stone": 0
+		},
+		"attack":4,
+		"melee_armor":1,
+		"pierce_armor":0,
+		"base_id":1800,
+		"help_converter":26033,
+		"language_file_name":5033,
+		"language_file_help":105033,
+		"name":"COMPBOW",
+		"hit_points":40,
+		"line_of_sight":7,
+		"garrison_capacity":0,
+		"type":70,
+		"class":0
+	},
+	"1801" : {
+		"cost": {
 			"wood": 0,
 			"food": 0,
 			"gold": 0,
@@ -37558,7 +37579,2086 @@
 		"attack":0,
 		"melee_armor":0,
 		"pierce_armor":0,
-		"base_id":1800,
+		"base_id":1801,
+		"help_converter":26033,
+		"language_file_name":0,
+		"language_file_help":105033,
+		"name":"COMPBOWMAN_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1802" : {
+		"cost": {
+			"wood": 35,
+			"food": 0,
+			"gold": 45,
+			"stone": 0
+		},
+		"attack":4,
+		"melee_armor":2,
+		"pierce_armor":0,
+		"base_id":1802,
+		"help_converter":26034,
+		"language_file_name":5034,
+		"language_file_help":105034,
+		"name":"ECOMPBOW",
+		"hit_points":45,
+		"line_of_sight":7,
+		"garrison_capacity":0,
+		"type":70,
+		"class":0
+	},
+	"1803" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 45,
+			"stone": 0
+		},
+		"attack":12,
+		"melee_armor":3,
+		"pierce_armor":2,
+		"base_id":1803,
+		"help_converter":26035,
+		"language_file_name":5035,
+		"language_file_help":105035,
+		"name":"MONASPA",
+		"hit_points":75,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1804" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1804,
+		"help_converter":26013,
+		"language_file_name":0,
+		"language_file_help":105013,
+		"name":"MONASPA_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1805" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 45,
+			"stone": 0
+		},
+		"attack":14,
+		"melee_armor":5,
+		"pierce_armor":2,
+		"base_id":1805,
+		"help_converter":26036,
+		"language_file_name":5036,
+		"language_file_help":105036,
+		"name":"EMONASPA",
+		"hit_points":90,
+		"line_of_sight":5,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1806" : {
+		"cost": {
+			"wood": 200,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":5,
+		"melee_armor":4,
+		"pierce_armor":10,
+		"base_id":1806,
+		"help_converter":26038,
+		"language_file_name":5038,
+		"language_file_help":105038,
+		"name":"FORTCRCH",
+		"hit_points":2400,
+		"line_of_sight":10,
+		"garrison_capacity":10,
+		"type":80,
+		"class":3
+	},
+	"1807" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1807,
+		"help_converter":26254,
+		"language_file_name":21110,
+		"language_file_help":105254,
+		"name":"SVANTOWER",
+		"hit_points":1,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":10,
+		"class":14
+	},
+	"1808" : {
+		"cost": {
+			"wood": 100,
+			"food": 20,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":1,
+		"pierce_armor":2,
+		"base_id":1808,
+		"help_converter":26045,
+		"language_file_name":5045,
+		"language_file_help":105045,
+		"name":"MULECART",
+		"hit_points":300,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":80,
+		"class":3
+	},
+	"1809" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1809,
+		"help_converter":26046,
+		"language_file_name":0,
+		"language_file_help":105046,
+		"name":"MULECART_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1810" : {
+		"cost": {
+			"wood": 0,
+			"food": 50,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":3,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1810,
+		"help_converter":26121,
+		"language_file_name":5606,
+		"language_file_help":105121,
+		"name":"SVMBAS",
+		"hit_points":25,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":4
+	},
+	"1811" : {
+		"cost": {
+			"wood": 0,
+			"food": 30,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":11,
+		"melee_armor":1,
+		"pierce_armor":1,
+		"base_id":1811,
+		"help_converter":26037,
+		"language_file_name":5037,
+		"language_file_help":105037,
+		"name":"WARRIORPRIEST",
+		"hit_points":80,
+		"line_of_sight":3,
+		"garrison_capacity":0,
+		"type":70,
+		"class":6
+	},
+	"1812" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1812,
+		"help_converter":26022,
+		"language_file_name":0,
+		"language_file_help":105022,
+		"name":"WARRIORPRIEST_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1813" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 75,
+			"stone": 0
+		},
+		"attack":14,
+		"melee_armor":3,
+		"pierce_armor":4,
+		"base_id":1813,
+		"help_converter":26703,
+		"language_file_name":5703,
+		"language_file_help":105703,
+		"name":"SAVAR",
+		"hit_points":145,
+		"line_of_sight":5,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1814" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1814,
+		"help_converter":26472,
+		"language_file_name":0,
+		"language_file_help":105472,
+		"name":"SAVAR_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1815" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 75,
+			"stone": 0
+		},
+		"attack":16,
+		"melee_armor":2,
+		"pierce_armor":4,
+		"base_id":1815,
+		"help_converter":26047,
+		"language_file_name":5047,
+		"language_file_help":105047,
+		"name":"SHAHISMAIL",
+		"hit_points":300,
+		"line_of_sight":8,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1816" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1816,
+		"help_converter":26039,
+		"language_file_name":0,
+		"language_file_help":105039,
+		"name":"SHAHISMAIL_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1817" : {
+		"cost": {
+			"wood": 0,
+			"food": 45,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":8,
+		"melee_armor":1,
+		"pierce_armor":1,
+		"base_id":1817,
+		"help_converter":26048,
+		"language_file_name":5048,
+		"language_file_help":105048,
+		"name":"QIZILBASH",
+		"hit_points":100,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1818" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1818,
+		"help_converter":26013,
+		"language_file_name":0,
+		"language_file_help":105013,
+		"name":"QIZILBASH_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1819" : {
+		"cost": {
+			"wood": 0,
+			"food": 80,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":8,
+		"melee_armor":1,
+		"pierce_armor":3,
+		"base_id":1819,
+		"help_converter":26049,
+		"language_file_name":5049,
+		"language_file_help":105049,
+		"name":"ISMAIL",
+		"hit_points":120,
+		"line_of_sight":8,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1820" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 75,
+			"stone": 0
+		},
+		"attack":17,
+		"melee_armor":3,
+		"pierce_armor":4,
+		"base_id":1820,
+		"help_converter":26050,
+		"language_file_name":5050,
+		"language_file_help":105050,
+		"name":"SELIM",
+		"hit_points":330,
+		"line_of_sight":5,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1821" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 75,
+			"stone": 0
+		},
+		"attack":14,
+		"melee_armor":2,
+		"pierce_armor":2,
+		"base_id":1821,
+		"help_converter":26676,
+		"language_file_name":5676,
+		"language_file_help":105676,
+		"name":"THOROS",
+		"hit_points":275,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1822" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 100,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":1,
+		"pierce_armor":2,
+		"base_id":1822,
+		"help_converter":26678,
+		"language_file_name":5678,
+		"language_file_help":105678,
+		"name":"TAMAR",
+		"hit_points":320,
+		"line_of_sight":11,
+		"garrison_capacity":0,
+		"type":70,
+		"class":18
+	},
+	"1823" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1823,
+		"help_converter":26472,
+		"language_file_name":0,
+		"language_file_help":105472,
+		"name":"TAMAR_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1824" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 70,
+			"stone": 0
+		},
+		"attack":14,
+		"melee_armor":2,
+		"pierce_armor":2,
+		"base_id":1824,
+		"help_converter":26680,
+		"language_file_name":5680,
+		"language_file_help":105680,
+		"name":"YURY",
+		"hit_points":200,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":6
+	},
+	"1825" : {
+		"cost": {
+			"wood": 0,
+			"food": 60,
+			"gold": 75,
+			"stone": 0
+		},
+		"attack":16,
+		"melee_armor":2,
+		"pierce_armor":2,
+		"base_id":1825,
+		"help_converter":26746,
+		"language_file_name":5746,
+		"language_file_help":105746,
+		"name":"IVANE",
+		"hit_points":230,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1826" : {
+		"cost": {
+			"wood": 0,
+			"food": 30,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":10,
+		"melee_armor":2,
+		"pierce_armor":2,
+		"base_id":1826,
+		"help_converter":26748,
+		"language_file_name":5748,
+		"language_file_help":105748,
+		"name":"ZAKARE",
+		"hit_points":250,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":70,
+		"class":6
+	},
+	"1827" : {
+		"cost": {
+			"wood": 0,
+			"food": 30,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":18,
+		"melee_armor":2,
+		"pierce_armor":2,
+		"base_id":1827,
+		"help_converter":26750,
+		"language_file_name":5750,
+		"language_file_help":105750,
+		"name":"STEPHAN",
+		"hit_points":200,
+		"line_of_sight":4,
+		"garrison_capacity":0,
+		"type":70,
+		"class":6
+	},
+	"1828" : {
+		"cost": {
+			"wood": 0,
+			"food": 50,
+			"gold": 10,
+			"stone": 0
+		},
+		"attack":12,
+		"melee_armor":1,
+		"pierce_armor":0,
+		"base_id":1828,
+		"help_converter":26046,
+		"language_file_name":5046,
+		"language_file_help":105046,
+		"name":"MLEH",
+		"hit_points":165,
+		"line_of_sight":5,
+		"garrison_capacity":0,
+		"type":70,
+		"class":6
+	},
+	"1829" : {
+		"cost": {
+			"wood": 0,
+			"food": 45,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":11,
+		"melee_armor":1,
+		"pierce_armor":1,
+		"base_id":1829,
+		"help_converter":26254,
+		"language_file_name":5254,
+		"language_file_help":105254,
+		"name":"EQIZILBASH",
+		"hit_points":140,
+		"line_of_sight":5,
+		"garrison_capacity":0,
+		"type":70,
+		"class":12
+	},
+	"1830" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":1000,
+		"pierce_armor":0,
+		"base_id":1830,
+		"help_converter":26315,
+		"language_file_name":0,
+		"language_file_help":105315,
+		"name":"Projectile Citadels",
+		"hit_points":1,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":60,
+		"class":11
+	},
+	"1831" : {
+		"cost": {
+			"wood": 0,
+			"food": 30,
+			"gold": 60,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":1,
+		"pierce_armor":1,
+		"base_id":1831,
+		"help_converter":26737,
+		"language_file_name":5737,
+		"language_file_help":105737,
+		"name":"RWARRIORPRIEST",
+		"hit_points":80,
+		"line_of_sight":3,
+		"garrison_capacity":0,
+		"type":70,
+		"class":43
+	},
+	"1832" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1832,
+		"help_converter":26598,
+		"language_file_name":21119,
+		"language_file_help":105598,
+		"name":"Yurt I",
+		"hit_points":500,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":3
+	},
+	"1833" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1833,
+		"help_converter":26599,
+		"language_file_name":21120,
+		"language_file_help":105599,
+		"name":"Yurt J",
+		"hit_points":500,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":3
+	},
+	"1834" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1834,
+		"help_converter":26600,
+		"language_file_name":21121,
+		"language_file_help":105600,
+		"name":"Yurt K",
+		"hit_points":500,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":3
+	},
+	"1835" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1835,
+		"help_converter":26601,
+		"language_file_name":21122,
+		"language_file_help":105601,
+		"name":"Yurt L",
+		"hit_points":500,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":3
+	},
+	"1836" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1836,
+		"help_converter":26225,
+		"language_file_name":21123,
+		"language_file_help":105225,
+		"name":"Chapel",
+		"hit_points":1,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":10,
+		"class":14
+	},
+	"1837" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1837,
+		"help_converter":26757,
+		"language_file_name":21124,
+		"language_file_help":105757,
+		"name":"CastleRuins",
+		"hit_points":1,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":10,
+		"class":14
+	},
+	"1838" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1838,
+		"help_converter":26757,
+		"language_file_name":21125,
+		"language_file_help":105757,
+		"name":"ChurchRuins",
+		"hit_points":1,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":10,
+		"class":14
+	},
+	"1839" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1839,
+		"help_converter":26511,
+		"language_file_name":21126,
+		"language_file_help":105511,
+		"name":"Bridge Piece End 1x1",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1840" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1840,
+		"help_converter":26513,
+		"language_file_name":21127,
+		"language_file_help":105513,
+		"name":"Bridge Piece End 1x2",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1841" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1841,
+		"help_converter":26513,
+		"language_file_name":21128,
+		"language_file_help":105513,
+		"name":"Bridge Piece End 2x1",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1842" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1842,
+		"help_converter":26512,
+		"language_file_name":21129,
+		"language_file_help":105512,
+		"name":"Bridge Piece Middle 1x1",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1843" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1843,
+		"help_converter":26642,
+		"language_file_name":21130,
+		"language_file_help":105642,
+		"name":"Bridge Piece Broken 1x1",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1844" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1844,
+		"help_converter":26642,
+		"language_file_name":21131,
+		"language_file_help":105642,
+		"name":"Bridge Piece Broken 1x2",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1845" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1845,
+		"help_converter":26643,
+		"language_file_name":21132,
+		"language_file_help":105643,
+		"name":"Bridge Piece Broken 2x1",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1846" : {
+		"cost": {
+			"wood": 100,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1846,
+		"help_converter":26641,
+		"language_file_name":21133,
+		"language_file_help":105641,
+		"name":"Bridge Piece Cracked 2x2",
+		"hit_points":1000,
+		"line_of_sight":6,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1847" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1847,
+		"help_converter":26593,
+		"language_file_name":21134,
+		"language_file_help":105593,
+		"name":"Bridge Rails",
+		"hit_points":1,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":80,
+		"class":14
+	},
+	"1848" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1848,
+		"help_converter":26039,
+		"language_file_name":0,
+		"language_file_help":105039,
+		"name":"THOROS_D",
+		"hit_points":0,
+		"line_of_sight":0,
+		"garrison_capacity":0,
+		"type":30,
+		"class":11
+	},
+	"1849" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1849,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 01",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1850" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1850,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 02",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1851" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1851,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 03",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1852" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1852,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 04",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1853" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1853,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 05",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1854" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1854,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 06",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1855" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1855,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 07",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1856" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1856,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 08",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1857" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1857,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Desert) 09",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1858" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1858,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 01",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1859" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1859,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 02",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1860" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1860,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 03",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1861" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1861,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 04",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1862" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1862,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 05",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1863" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1863,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 06",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1864" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1864,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 07",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1865" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1865,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 08",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1866" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1866,
+		"help_converter":26249,
+		"language_file_name":0,
+		"language_file_help":105249,
+		"name":"Cliff (Snow) 09",
+		"hit_points":10000,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":10,
+		"class":34
+	},
+	"1867" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":5,
+		"melee_armor":1000,
+		"pierce_armor":0,
+		"base_id":1867,
+		"help_converter":26067,
+		"language_file_name":0,
+		"language_file_help":105067,
+		"name":"Projectile SVT",
+		"hit_points":1,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":60,
+		"class":11
+	},
+	"1868" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":5,
+		"melee_armor":1000,
+		"pierce_armor":0,
+		"base_id":1868,
+		"help_converter":26067,
+		"language_file_name":0,
+		"language_file_help":105067,
+		"name":"Projectile SVT (Fire)",
+		"hit_points":1,
+		"line_of_sight":-1,
+		"garrison_capacity":0,
+		"type":60,
+		"class":11
+	},
+	"1869" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1869,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1870" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1870,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1871" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1871,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1872" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1872,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1873" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1873,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1874" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1874,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1875" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1875,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1876" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1876,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1877" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1877,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1878" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1878,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1879" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1879,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1880" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1880,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1881" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1881,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1882" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1882,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1883" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1883,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1884" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1884,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1885" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1885,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1886" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1886,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1887" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1887,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1888" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1888,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1889" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1889,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1890" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1890,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1891" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1891,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1892" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1892,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1893" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1893,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1894" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1894,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1895" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1895,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1896" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1896,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1897" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1897,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1898" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1898,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1899" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1899,
+		"help_converter":26000,
+		"language_file_name":0,
+		"language_file_help":105000,
+		"name":"",
+		"hit_points":1,
+		"line_of_sight":2,
+		"garrison_capacity":0,
+		"type":10,
+		"class":-1
+	},
+	"1900" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"attack":0,
+		"melee_armor":0,
+		"pierce_armor":0,
+		"base_id":1900,
 		"help_converter":26000,
 		"language_file_name":0,
 		"language_file_help":105000,
@@ -37658,15 +39758,15 @@
 	},
 	"7" : {
 		"cost": {
-			"wood": 0,
-			"food": 300,
+			"wood": 600,
+			"food": 0,
 			"gold": 300,
 			"stone": 0
 		},
 		"help_converter":28423,
 		"language_file_name":7423,
 		"language_file_help":107423,
-		"name":"Persian Mahouts"
+		"name":"Citadels"
 	},
 	"8" : {
 		"cost": {
@@ -37910,15 +40010,15 @@
 	},
 	"28" : {
 		"cost": {
-			"wood": 0,
-			"food": 1,
-			"gold": 0,
+			"wood": 300,
+			"food": 0,
+			"gold": 200,
 			"stone": 0
 		},
-		"help_converter":28028,
-		"language_file_name":7028,
-		"language_file_help":107028,
-		"name":"Compass"
+		"help_converter":28451,
+		"language_file_name":7451,
+		"language_file_help":107451,
+		"name":"Bimaristan"
 	},
 	"29" : {
 		"cost": {
@@ -38263,10 +40363,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28037,
+		"help_converter":28000,
 		"language_file_name":7000,
-		"language_file_help":107037,
-		"name":"Spanish Cannon Galleon"
+		"language_file_help":107000,
+		"name":"C-Bonus, Parthian Tactics age and cost"
 	},
 	"58" : {
 		"cost": {
@@ -38323,10 +40423,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cavalry gold"
 	},
 	"63" : {
 		"cost": {
@@ -39859,10 +41959,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28288,
+		"language_file_name":7000,
+		"language_file_help":107288,
+		"name":"C-Bonus, CA vs Archers"
 	},
 	"191" : {
 		"cost": {
@@ -40327,10 +42427,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, -50f"
 	},
 	"230" : {
 		"cost": {
@@ -41326,7 +43426,7 @@
 		"help_converter":28288,
 		"language_file_name":7000,
 		"language_file_help":107288,
-		"name":"C-Bonus, Camels +10 HP"
+		"name":"C-Bonus, Camels +25% HP"
 	},
 	"313" : {
 		"cost": {
@@ -41979,8 +44079,8 @@
 	"367" : {
 		"cost": {
 			"wood": 0,
-			"food": 1600,
-			"gold": 1200,
+			"food": 1350,
+			"gold": 800,
 			"stone": 0
 		},
 		"help_converter":28389,
@@ -42490,7 +44590,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, TC +10%"
+		"name":"C-Bonus, TC and Dock work rate"
 	},
 	"410" : {
 		"cost": {
@@ -43870,7 +45970,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, 15% faster foragers"
+		"name":"C-Bonus, 10% faster foragers"
 	},
 	"525" : {
 		"cost": {
@@ -43886,27 +45986,27 @@
 	},
 	"526" : {
 		"cost": {
-			"wood": 25,
-			"food": 40,
-			"gold": 0,
+			"wood": 0,
+			"food": 1000,
+			"gold": 600,
 			"stone": 0
 		},
-		"help_converter":28316,
-		"language_file_name":0,
-		"language_file_help":107316,
-		"name":"Hunting Dogs"
+		"help_converter":28442,
+		"language_file_name":7442,
+		"language_file_help":107442,
+		"name":"Savar"
 	},
 	"527" : {
 		"cost": {
-			"wood": 10,
+			"wood": 0,
 			"food": 0,
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":5158,
-		"language_file_help":107000,
-		"name":"Fire Tower (make avail)"
+		"help_converter":28402,
+		"language_file_name":7000,
+		"language_file_help":107402,
+		"name":"[FTT] Disable Paladin"
 	},
 	"528" : {
 		"cost": {
@@ -44203,10 +46303,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":-79000,
-		"language_file_name":0,
-		"language_file_help":0,
-		"name":"New Research"
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Caravanserai (make avail)"
 	},
 	"553" : {
 		"cost": {
@@ -44434,7 +46534,7 @@
 		"help_converter":28000,
 		"language_file_name":7000,
 		"language_file_help":107000,
-		"name":"C-Bonus, Animals decay"
+		"name":"Citadels + Chemistry"
 	},
 	"572" : {
 		"cost": {
@@ -48373,6 +50473,966 @@
 		"name":"RESERVED"
 	},
 	"900" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"901" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"902" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"903" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"904" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"905" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"906" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"907" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"908" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"909" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"910" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"911" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"912" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"913" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"914" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"915" : {
+		"cost": {
+			"wood": 1,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":10314,
+		"language_file_help":107000,
+		"name":""
+	},
+	"916" : {
+		"cost": {
+			"wood": 1,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":10315,
+		"language_file_help":107000,
+		"name":""
+	},
+	"917" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Composite Bowman (make avail)"
+	},
+	"918" : {
+		"cost": {
+			"wood": 600,
+			"food": 0,
+			"gold": 500,
+			"stone": 0
+		},
+		"help_converter":28404,
+		"language_file_name":7404,
+		"language_file_help":107404,
+		"name":"Elite Composite Bowman"
+	},
+	"919" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Monaspa (make avail)"
+	},
+	"920" : {
+		"cost": {
+			"wood": 0,
+			"food": 1000,
+			"gold": 700,
+			"stone": 0
+		},
+		"help_converter":28405,
+		"language_file_name":7405,
+		"language_file_help":107405,
+		"name":"Elite Monaspa"
+	},
+	"921" : {
+		"cost": {
+			"wood": 0,
+			"food": 550,
+			"gold": 400,
+			"stone": 0
+		},
+		"help_converter":28406,
+		"language_file_name":7406,
+		"language_file_help":107406,
+		"name":"Fereters"
+	},
+	"922" : {
+		"cost": {
+			"wood": 350,
+			"food": 0,
+			"gold": 300,
+			"stone": 0
+		},
+		"help_converter":28407,
+		"language_file_name":7407,
+		"language_file_help":107407,
+		"name":"Cilician Fleet"
+	},
+	"923" : {
+		"cost": {
+			"wood": 0,
+			"food": 300,
+			"gold": 200,
+			"stone": 0
+		},
+		"help_converter":28440,
+		"language_file_name":7440,
+		"language_file_help":107440,
+		"name":"Svan Towers"
+	},
+	"924" : {
+		"cost": {
+			"wood": 0,
+			"food": 750,
+			"gold": 250,
+			"stone": 0
+		},
+		"help_converter":28441,
+		"language_file_name":7441,
+		"language_file_help":107441,
+		"name":"Aznauri Cavalry"
+	},
+	"925" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28312,
+		"language_file_name":7000,
+		"language_file_help":107312,
+		"name":"C-Bonus, Start w/ mule cart"
+	},
+	"926" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Elevation Bonus Defense"
+	},
+	"927" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"928" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"929" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":5038,
+		"language_file_help":107000,
+		"name":"C-Bonus, Fortified Church"
+	},
+	"930" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"Fortified Church (Georgians)"
+	},
+	"931" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Svan Towers"
+	},
+	"932" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Mule Cart (make avail)"
+	},
+	"933" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Shadow Mule Cart 1"
+	},
+	"934" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Fortified Church area effect"
+	},
+	"935" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"936" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Svan Towers + Chemistry"
+	},
+	"937" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cavalry regeneration age2"
+	},
+	"938" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cavalry regeneration age3"
+	},
+	"939" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cavalry regeneration age4"
+	},
+	"940" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Mule Cart (make avail)"
+	},
+	"941" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"Fortified Church (Armenians)"
+	},
+	"942" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church Age4 upgrade"
+	},
+	"943" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Fletching"
+	},
+	"944" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Bodkin"
+	},
+	"945" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Bracer"
+	},
+	"946" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Chemistry"
+	},
+	"947" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Fortified Church + Murder Holes"
+	},
+	"948" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"Warrior Priest (make avail)"
+	},
+	"949" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Free Relic"
+	},
+	"950" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Early Barracks techs"
+	},
+	"951" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Castle Barracks tech requirement"
+	},
+	"952" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Long Swordsman requirement"
+	},
+	"953" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Two-Handed Swordsman requirement"
+	},
+	"954" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Champion requirement"
+	},
+	"955" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Pikeman requirement"
+	},
+	"956" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28338,
+		"language_file_name":0,
+		"language_file_help":107338,
+		"name":"Halberdier requirement"
+	},
+	"957" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Free Relic2"
+	},
+	"958" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Cheaper Mule Cart"
+	},
+	"959" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"C-Bonus, Galley +1 projectile"
+	},
+	"960" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Double-Bit Axe"
+	},
+	"961" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Bow Saw"
+	},
+	"962" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Two-Man Saw"
+	},
+	"963" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Gold Mining"
+	},
+	"964" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Gold Shaft Mining"
+	},
+	"965" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Stone Mining"
+	},
+	"966" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":6000,
+		"language_file_help":107000,
+		"name":"C-Bonus, +% Stone Shaft Mining"
+	},
+	"967" : {
+		"cost": {
+			"wood": 0,
+			"food": 850,
+			"gold": 600,
+			"stone": 0
+		},
+		"help_converter":28449,
+		"language_file_name":7449,
+		"language_file_help":107449,
+		"name":"Elite Qizilbash Warrior"
+	},
+	"968" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7452,
+		"language_file_help":107000,
+		"name":"Placeholder 1"
+	},
+	"969" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7453,
+		"language_file_help":107000,
+		"name":"Placeholder 2"
+	},
+	"970" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7454,
+		"language_file_help":107000,
+		"name":"Placeholder 3"
+	},
+	"971" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7455,
+		"language_file_help":107000,
+		"name":"Placeholder 4"
+	},
+	"972" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7456,
+		"language_file_help":107000,
+		"name":"Placeholder 5"
+	},
+	"973" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7457,
+		"language_file_help":107000,
+		"name":"Placeholder 6"
+	},
+	"974" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7458,
+		"language_file_help":107000,
+		"name":"Placeholder 7"
+	},
+	"975" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7459,
+		"language_file_help":107000,
+		"name":"Placeholder 8"
+	},
+	"976" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7460,
+		"language_file_help":107000,
+		"name":"Placeholder 9"
+	},
+	"977" : {
+		"cost": {
+			"wood": 0,
+			"food": 100,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7461,
+		"language_file_help":107000,
+		"name":"Placeholder 10"
+	},
+	"978" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"979" : {
+		"cost": {
+			"wood": 0,
+			"food": 0,
+			"gold": 0,
+			"stone": 0
+		},
+		"help_converter":28000,
+		"language_file_name":7000,
+		"language_file_help":107000,
+		"name":"RESERVED"
+	},
+	"980" : {
 		"cost": {
 			"wood": 0,
 			"food": 0,
