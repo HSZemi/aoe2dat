@@ -1,6 +1,6 @@
 [submodule "code/genieutils"]
 	path = code/genieutils
-	url = https://github.com/hszemi/genieutils.git
+	url = https://github.com/Tapsa/genieutils.git
 [submodule "code/pcrio"]
 	path = code/pcrio
 	url = https://github.com/Tapsa/pcrio.git

@@ -40153,10 +40153,10 @@
 			"gold": 0,
 			"stone": 0
 		},
-		"help_converter":28000,
-		"language_file_name":7000,
-		"language_file_help":107000,
-		"name":""
+		"help_converter":-79001,
+		"language_file_name":0,
+		"language_file_help":-1,
+		"name":"Hittite Team Bonus"
 	},
 	"100" : {
 		"cost": {
