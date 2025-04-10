@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 	typedef genie::ResourceUsage<int16_t, int16_t, int16_t> ResourceStorage;
 	typedef genie::ResourceUsage<int16_t, int16_t, unsigned char> ResearchResourceCost;
 
-	std::set<std::uint32_t> used;
+	std::set<uint32_t> used;
 
 	myfile << "{\"units_buildings\":" << endl;
 
