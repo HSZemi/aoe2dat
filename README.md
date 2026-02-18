@@ -1,3 +1,12 @@
+> [!WARNING]
+> This project is no longer maintained.
+> I simply got fed up with C++.  
+> To access dat values directly, you can instead use the python package [genieutils-py](https://github.com/SiegeEngineers/genieutils-py).
+
+> [!TIP]
+> genieutils-py also offers a way to dump the dat file into one big json file, if you are into that kind of thing. The command is described in its README file.
+> The keys are usually snake-cased versions of the CamelCase keys in the original genieutils (e.g. `PlayerColours` becomes `player_colours`).
+
 # aoe2dat
 Extract Unit and Tech data from the Age of Empires II dat file
 
